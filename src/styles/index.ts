@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -23,10 +23,11 @@ export const GlobalStyle = createGlobalStyle`
   body{
     /* background-color: linear-gradient(8deg,#221133,rgba(1, 2, 17)); */
       /* background-color: rgba(0, 0, 0, 0.1); */
-      background: #221133;
+      /* background: #221133; */
+      background: rgb(32, 33, 37);
   }
   
-  p, h1, h2, h3, h4, h5, h6{
+  p,a, h1, h2, h3, h4, h5, h6{
     color:#f2f6FC;
     font-family: Open Sans, sans-serif;
 

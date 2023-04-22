@@ -29,13 +29,11 @@ export const GlobalStyle = createGlobalStyle`
   p, h1, h2, h3, h4, h5, h6{
     color:#f2f6FC;
     font-family: Open Sans, sans-serif;
-    /* font-weight: 900; */
 
   }
 
   body, input, textarea, select, button{
     font:400 1rem sans-serif;
-    /* font-family: 'Open Sans', sans-serif; */
 
   }
 

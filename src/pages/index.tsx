@@ -1,3 +1,4 @@
+import { HomeHeader } from "@component/components/HomeHeader"
 import { GlobalStyle } from "@component/styles"
 import Head from "next/head"
 
@@ -9,11 +10,7 @@ export default function About() {
           <title>Página inicial - FitnessApp</title>  
         </Head>      
 
-        <div>
-          <h1>
-          Página inicial - FitnessApp
-          </h1>
-        </div>
+       <HomeHeader></HomeHeader>
       </>
 
 )

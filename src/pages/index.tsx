@@ -1,6 +1,5 @@
 import { GlobalStyle } from "@component/styles"
 import Head from "next/head"
-//document only load once time in the app.
 
 export default function About() {  
     return(

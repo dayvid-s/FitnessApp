@@ -41,6 +41,6 @@ export const IconsArea = styled.div`
 
 export const UserAccountArea = styled.div`
     display: flex;
-    flex-direction: column;
     margin-right: 4rem;
+    margin-left: 20px;
 `

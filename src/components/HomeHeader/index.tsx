@@ -1,9 +1,12 @@
+import { User } from "@component/assets"
 import {
   HeaderArea,
   IconsArea,
   NavBar,
   UserAccountArea
 } from "./styles"
+ 
+import Link from "next/link"
 
 export function HomeHeader (){
   return(
@@ -12,7 +15,9 @@ export function HomeHeader (){
         width="30" height="30"/>
       <h3>FitnessApp</h3>
       <NavBar>
-        <a>Seus macronutrientes</a>
+        <Link legacyBehavior  href="/home">
+          <a>Visão Geral</a>
+        </Link>
         <a>Dieta</a>   
         <a>Treino</a>
         <a>Hábitos saudáveis</a>
@@ -29,13 +34,13 @@ export function HomeHeader (){
           width="30" height="20"
           alt="" />
 
-        <img src="https://www.svgrepo.com/show/513797/user-down.svg" alt="" 
+        <svg media="../usersv.svg"  
           width="30" height="20"
         />
       </IconsArea>
+      <User  ></User>
       <UserAccountArea>
-        <p>eae</p>
-        <p>ss</p>
+        <p>Dayvid Santos</p>
       </UserAccountArea>
     </HeaderArea>
   )

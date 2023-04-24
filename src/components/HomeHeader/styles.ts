@@ -19,28 +19,30 @@ export const HeaderArea = styled.header`
 export const NavBar = styled.nav`
     margin-left:2rem;
     a{
-        color:#fff;
+        color:#d4d4d4;
         margin-right: 1rem;
         font-size: 0.85rem;
-        opacity: 0.7;
     }
     img{
     }
 `
 export const IconsArea = styled.div`
     margin-left:auto;
-    a{
+    display: flex;
+    svg{
         color:#fff;
-        margin-right: 1rem;
-        font-size: 0.85rem;
+        margin-right: 0.60rem;
         opacity: 0.7;
-    }
-    img{
     }
 `
 
 export const UserAccountArea = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 4rem;
-    margin-left: 20px;
+    margin-left: 10px;
+    svg{
+        margin-right:1px;
+    }
 `

@@ -1,12 +1,14 @@
-import { User } from "@component/assets"
 import {
   HeaderArea,
   IconsArea,
   NavBar,
   UserAccountArea
 } from "./styles"
- 
 import Link from "next/link"
+import {MdOutlineNotificationsActive} from "react-icons/md"
+import {HiOutlineMail} from "react-icons/hi"
+import {HiOutlineAdjustments} from "react-icons/hi"
+import {AiOutlineUser} from "react-icons/ai"
 
 export function HomeHeader (){
   return(
@@ -24,22 +26,15 @@ export function HomeHeader (){
       </NavBar>
       
       <IconsArea>
+        <MdOutlineNotificationsActive color="#d4d4d4"/>
+        
+        <HiOutlineMail color="#d4d4d4" />
 
-        <img src="https://www.svgrepo.com/show/473975/notification-bell-new.svg"
-          width="30" height="20"  />
-        <img src="https://www.svgrepo.com/show/489456/email.svg" alt=""
-          width="30" height="20"
-        />
-        <img src="https://www.svgrepo.com/show/425650/configuration-vertical-options.svg"
-          width="30" height="20"
-          alt="" />
+        <HiOutlineAdjustments color="#d4d4d4" />
 
-        <svg media="../usersv.svg"  
-          width="30" height="20"
-        />
       </IconsArea>
-      <User  ></User>
       <UserAccountArea>
+        <AiOutlineUser color="#d4d4d4" />
         <p>Dayvid Santos</p>
       </UserAccountArea>
     </HeaderArea>

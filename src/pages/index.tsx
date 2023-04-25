@@ -1,7 +1,9 @@
 import { HomeHeader } from "@component/components/HomeHeader"
+import { UserNutrients } from "@component/components/UserNutrients"
 import { Welcome } from "@component/components/Welcome"
 import { GlobalStyle } from "@component/styles"
 import Head from "next/head"
+import Home from "./Home/Index"
 
 export default function About() {  
   return(
@@ -10,9 +12,7 @@ export default function About() {
       <Head>
         <title>Página inicial - FitnessApp</title>  
       </Head>      
-
-      <HomeHeader/>
-      <Welcome/>
+      <Home></Home>
     </>
 
   )

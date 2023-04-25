@@ -24,12 +24,13 @@ export const GlobalStyle = createGlobalStyle`
     /* background-color: linear-gradient(8deg,#221133,rgba(1, 2, 17)); */
       /* background-color: rgba(0, 0, 0, 0.1); */
       /* background: #221133; */
-      background: rgb(32, 33, 37);
+      /* background: rgb(32, 33, 37); */
+      background: #121214;
   }
   
   p,a, h1, h2, h3, h4, h5, h6{
     color:#f2f6FC;
-    font-family: Open Sans, sans-serif;
+    font-family: Roboto, sans-serif;
 
   }
 

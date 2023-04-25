@@ -1,24 +1,35 @@
 import {
   Container,
   TitleArea,
-  DateWrapper
+  DateWrapper,
+  PageInfoWrapper,
+  WelcomeWrapper
 } from "./styles"
 
 
 export function Welcome (){
   
   
-  const dateOfToday= (new Date().toLocaleDateString([],{weekday: "long", year: "numeric", month: "long", day: "numeric"}))
+  const dateOfToday= (new Date().toLocaleDateString([],
+    {weekday: "long", year: "numeric", month: "long", day: "numeric"}))
 
   return(
     <Container>
-      <TitleArea>
-        <a>Visão Geral / <strong>Dieta</strong></a> 
-      </TitleArea>
+      <PageInfoWrapper>
+
+        <TitleArea>
+          <a>Visão Geral / <strong>Dieta</strong></a> 
+        </TitleArea>
       
-      <DateWrapper>
-        <p>{dateOfToday.replace(".","")}</p>
-      </DateWrapper>
+        <DateWrapper>
+          <p>{dateOfToday.replace(".","")}</p>
+        </DateWrapper>
+      </PageInfoWrapper>
+      <WelcomeWrapper>
+
+        <h1>Seja bem vindo, <strong>Dayvid.</strong></h1>
+        <p>Abaixo você verá os seus valores dos macronutrientes atuais.</p>
+      </WelcomeWrapper>
     </Container>
   )
 }

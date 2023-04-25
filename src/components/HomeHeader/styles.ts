@@ -8,10 +8,10 @@ export const HeaderArea = styled.header`
     flex-direction: row;
     align-items: center;
     padding:1rem;
-    border-bottom: 1.3px solid;
+    border-bottom: 0.80px solid;
     border-color: #353535;
-    margin-left: 1.5rem;
     img{
+        margin-left: 1.5rem;
         cursor: pointer;
     }
     `

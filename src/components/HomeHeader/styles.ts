@@ -10,7 +10,7 @@ export const HeaderArea = styled.header`
     padding:1rem;
     border-bottom: 1.3px solid;
     border-color: #353535;
-
+    margin-left: 1.5rem;
     img{
         cursor: pointer;
     }

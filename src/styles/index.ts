@@ -29,13 +29,16 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   p,a, h1, h2, h3, h4, h5, h6{
-    color:#f2f6FC;
+    color:#e1e1e6;
     font-family: Roboto, sans-serif;
+
 
   }
 
   body, input, textarea, select, button{
-    font:400 1rem sans-serif;
+    font:400 0.75rem sans-serif;
+    /* font-family: Roboto, sans-serif; */
+
 
   }
 

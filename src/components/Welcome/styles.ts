@@ -8,6 +8,7 @@ export const Container = styled.div`
     align-items: center;
     padding:1rem;
     margin-left: 1.5rem;
+    height:11rem
     `
 export const PageInfoWrapper = styled.div`
     display: flex;

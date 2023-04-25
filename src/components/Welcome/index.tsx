@@ -9,9 +9,10 @@ import {
 
 export function Welcome (){
   
-  
   const dateOfToday= (new Date().toLocaleDateString([],
     {weekday: "long", year: "numeric", month: "long", day: "numeric"}))
+
+  const dateCapitalized = dateOfToday.charAt(0).toUpperCase() + dateOfToday.slice(1).replace(".","")
 
   return(
     <Container>
@@ -22,7 +23,7 @@ export function Welcome (){
         </TitleArea>
       
         <DateWrapper>
-          <p>{dateOfToday.replace(".","")}</p>
+          <p>{dateCapitalized}</p>
         </DateWrapper>
       </PageInfoWrapper>
       <WelcomeWrapper>

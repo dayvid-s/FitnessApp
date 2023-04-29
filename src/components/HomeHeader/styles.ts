@@ -1,29 +1,33 @@
 import styled from "styled-components"
 
 export const HeaderArea = styled.header`
-    max-width: 1120px;
+    max-width: 1520px;
     height: 4rem;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding:1rem;
+    padding:2.5rem;
     border-bottom: 0.80px solid;
     border-color: #353535;
+    background-color: #121214;
     img{
-        margin-left: 1.5rem;
         cursor: pointer;
+    }
+    h3{
+        font-size: 1.8rem;
+        cursor:pointer;
     }
     `
 
 export const NavBar = styled.nav`
-    margin-left:2rem;
+    margin-left:5rem;
     a{
         color:#d4d4d4;
-        margin-right: 1rem;
-        font-size: 0.85rem;
-    }
-    img{
+        margin-right: 2rem;
+        font-size: 1rem;
+        cursor:pointer;
+
     }
 `
 export const IconsArea = styled.div`
@@ -31,8 +35,10 @@ export const IconsArea = styled.div`
     display: flex;
     svg{
         color:#fff;
-        margin-right: 0.60rem;
+        margin-right: 1.2rem;
         opacity: 0.7;
+        cursor:pointer;
+
     }
 `
 
@@ -40,9 +46,10 @@ export const UserAccountArea = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 4rem;
+    margin-right: 2.5rem;
     margin-left: 10px;
     svg{
         margin-right:1px;
+        cursor:pointer;
     }
 `

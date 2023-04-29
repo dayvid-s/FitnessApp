@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
       /* background-color: rgba(0, 0, 0, 0.1); */
       /* background: #221133; */
       /* background: rgb(32, 33, 37); */
-      background: #121214;
+      background: #131215;
   }
   
   p,a, h1, h2, h3, h4, h5, h6{
@@ -36,8 +36,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, select, button{
-    font:400 0.75rem sans-serif;
-    /* font-family: Roboto, sans-serif; */
+    font:500 1rem sans-serif;
 
 
   }

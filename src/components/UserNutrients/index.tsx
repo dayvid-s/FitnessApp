@@ -12,9 +12,9 @@ export function UserNutrients (){
     <Container>
       <NutrientsWrapper>
         <NutrientsInfo  ></NutrientsInfo>  
-        <NutrientsInfo marginLeft={"12.5rem"} ></NutrientsInfo>
-        <NutrientsInfo marginLeft={"25rem"} ></NutrientsInfo>
-        <NutrientsInfo marginLeft={"37.5rem"} ></NutrientsInfo>
+        <NutrientsInfo marginLeft={"19rem"} ></NutrientsInfo>
+        <NutrientsInfo marginLeft={"38rem"} ></NutrientsInfo>
+        <NutrientsInfo marginLeft={"57rem"} ></NutrientsInfo>
       </NutrientsWrapper>
       <p>eaes</p>
     </Container>

@@ -2,6 +2,21 @@ import { createGlobalStyle } from "styled-components"
 
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    --background: #f0f2f5;
+    --red: #e52e4d;
+    --green: #33cc95;
+    --blue: #5429cc;
+    --blue-light: #6933ff;
+    --orange: #ff512f;
+    --orange-light: #f09819;
+    --gray-dark: #121214;
+    --gray-light: #202024;
+    --text-title: #363f5f;
+    --text-body: #969cb3;
+    --shape: #ffffff;
+  }
+
   *{
     margin:0;
     padding:0;
@@ -26,6 +41,7 @@ export const GlobalStyle = createGlobalStyle`
       /* background: #221133; */
       /* background: rgb(32, 33, 37); */
       background: #131215;
+      -webkit-font-smoothing: antialiased;
   }
   
   p,a, h1, h2, h3, h4, h5, h6{

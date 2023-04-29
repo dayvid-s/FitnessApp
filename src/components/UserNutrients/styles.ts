@@ -8,6 +8,5 @@ export const Container = styled.div`
     `
 
 export const NutrientsWrapper = styled.div`
-    margin-left:2.50rem
-    
+    margin-left:2.50rem;
     `

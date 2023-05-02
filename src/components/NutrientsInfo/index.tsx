@@ -9,26 +9,24 @@ import React from "react"
 
 export interface InutrientsInfoProps {
   type: string,
-  marginLeft?: string,
   Icon: IconType
 }
 
 export function NutrientsInfo ({
   type,
-  marginLeft, 
   Icon
 }:InutrientsInfoProps){
   
   
 
   return(
-    <Container marginLeft={marginLeft} >
+    <Container type={type}  >
       <IconWrapper type={type} >
 
         {React.createElement(Icon)}
       </IconWrapper>
 
-      <p>eaes</p>
+      <p>Carboidratos</p>
     </Container>
   )
 }

@@ -1,5 +1,6 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 export interface ConteinerProps {
+    type: string  
     marginLeft?: string  
   }
 export interface IconWrapperProps {
@@ -8,12 +9,25 @@ export interface IconWrapperProps {
   
 
 export const Container = styled.div<ConteinerProps>`
-    background-color: #fff;
+    ${({type})=> (type == "carb")&& css`
+    background-color: var(--blue-light)`};
+    
+    ${({type})=> (type == "protein")&& css`
+    background-color: var(--text-title);
+    margin-left:19rem`};
+    
+    ${({type})=> (type == "fat")&& css`
+    background-color: var(--orange-light);
+    margin-left:38rem;`};
+    
+    ${({type})=> (type == "fiber")&& css`
+    background-color: var(--green);
+    margin-left:57rem;`};
+    
     height: 30vh;
     width: 22vw;
     margin-top: -3.5rem;
     position:absolute;
-    margin-left: ${props => props.marginLeft};
     border-radius:5px;
     padding:1rem;
     
@@ -31,7 +45,21 @@ export const IconWrapper = styled.div<IconWrapperProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--blue-light);
+/* 
+    ${({type})=> (type == "carb")&& css`
+    background-color: var(--blue-light)`};
+    
+    ${({type})=> (type == "protein")&& css`
+    background-color: var(--text-title)`};
+    
+    ${({type})=> (type == "fat")&& css`
+    background-color: var(--orange-light)`};
+    
+    ${({type})=> (type == "fiber")&& css`
+    background-color: var(--green)`};
+ */
+
+    background-color: #DBF2FD;
     svg{
         width: 25px;
         height:25px;

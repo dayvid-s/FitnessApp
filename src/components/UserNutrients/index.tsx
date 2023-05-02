@@ -16,9 +16,9 @@ export function UserNutrients (){
     <Container>
       <NutrientsWrapper>
         <NutrientsInfo type = "carb"  Icon = {GiSlicedBread} ></NutrientsInfo>  
-        <NutrientsInfo type = "protein"  Icon={TbMeat} marginLeft={"19rem"} ></NutrientsInfo>
-        <NutrientsInfo type = "fat"  Icon = {GiAvocado}marginLeft={"38rem"} ></NutrientsInfo>
-        <NutrientsInfo type = "fiber"  Icon = {GiCorn} marginLeft={"57rem"} ></NutrientsInfo> 
+        <NutrientsInfo type = "protein"  Icon={TbMeat}  ></NutrientsInfo>
+        <NutrientsInfo type = "fat"  Icon = {GiAvocado}  ></NutrientsInfo>
+        <NutrientsInfo type = "fiber"  Icon = {GiCorn}  ></NutrientsInfo> 
       </NutrientsWrapper>
     </Container>
   )

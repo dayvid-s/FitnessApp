@@ -1,10 +1,13 @@
 import { IconType } from "react-icons/lib"
 import {
   Container,
-  IconWrapper
+  IconWrapper,
+  MacroNutrientsWrapper,
+  RegisterMealButton,
+  TotalNutrientsArea
 } from "./styles"
 import React from "react"
-
+import {BsFillArrowRightSquareFill} from "react-icons/bs"
 
 
 export interface InutrientsInfoProps {
@@ -20,13 +23,26 @@ export function NutrientsInfo ({
   
 
   return(
-    <Container type={type}  >
-      <IconWrapper type={type} >
+    <Container type={type} >
+      <MacroNutrientsWrapper>
 
-        {React.createElement(Icon)}
-      </IconWrapper>
+        <IconWrapper type={type} >
 
-      <p>Carboidratos</p>
+          {React.createElement(Icon)}
+        </IconWrapper>
+
+        <p>Carboidratos</p>
+      </MacroNutrientsWrapper>
+      
+      <TotalNutrientsArea>
+        <p>Total de <strong>0</strong> Carboidratos consumidos hoje</p>
+      
+        <RegisterMealButton>REGISTRAR REFEIÇÃO
+
+          <BsFillArrowRightSquareFill/>
+        </RegisterMealButton>
+      </TotalNutrientsArea>
+      {/* 0 carboidratos hoje, registrar refeição pique botao #DBF2FD*/}
     </Container>
   )
 }

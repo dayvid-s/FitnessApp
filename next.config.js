@@ -2,7 +2,7 @@
 const nextConfig = {
   experimental: {
     appDir: true,
-    reactStrictMode: true,
+    reactStrictMode: false,
     compiler: {
       // Enables the styled-components SWC transform
       styledComponents: true

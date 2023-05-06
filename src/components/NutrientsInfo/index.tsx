@@ -26,7 +26,7 @@ export function NutrientsInfo ({
     <Container type={type} >
       <MacroNutrientsWrapper>
 
-        <IconWrapper type={type} >
+        <IconWrapper nutrientType={type} >
 
           {React.createElement(Icon)}
         </IconWrapper>
@@ -37,7 +37,7 @@ export function NutrientsInfo ({
       <TotalNutrientsArea>
         <p>Total de <strong>0</strong> Carboidratos consumidos hoje</p>
       
-        <RegisterMealButton>REGISTRAR REFEIÇÃO
+        <RegisterMealButton nutrientType={type} >REGISTRAR REFEIÇÃO
 
           <BsFillArrowRightSquareFill/>
         </RegisterMealButton>

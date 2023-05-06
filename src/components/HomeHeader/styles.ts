@@ -23,7 +23,7 @@ export const HeaderArea = styled.header`
 export const NavBar = styled.nav`
     margin-left:5rem;
     a{
-        color:#d4d4d4;
+        color:#F7F7F7;
         margin-right: 2rem;
         font-size: 1rem;
         cursor:pointer;

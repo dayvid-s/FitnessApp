@@ -26,15 +26,15 @@ export function HomeHeader (){
       </NavBar>
       
       <IconsArea>
-        <MdOutlineNotificationsActive size={"20px"} color="#d4d4d4"/>
+        <MdOutlineNotificationsActive size={"20px"} color="#F7F7F7"/>
         
-        <HiOutlineMail size={"20px"}  color="#d4d4d4" />
+        <HiOutlineMail size={"20px"}  color="#F7F7F7" />
 
-        <HiOutlineAdjustments size={"20px"}  color="#d4d4d4" />
+        <HiOutlineAdjustments size={"20px"}  color="#F7F7F7" />
 
       </IconsArea>
       <UserAccountArea>
-        <AiOutlineUser size={"20px"} color="#d4d4d4" />
+        <AiOutlineUser size={"20px"} color="#F7F7F7" />
         <p>Dayvid Santos</p>
       </UserAccountArea>
     </HeaderArea>

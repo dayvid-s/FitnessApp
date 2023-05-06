@@ -11,7 +11,7 @@ export interface IconWrapperProps {
 export const Container = styled.div<ConteinerProps>`    
     height: 30vh;
     width: 22vw;
-    margin-top: -5.0rem;
+    margin-top: -8.0rem;
     position:absolute;
     border-radius:5px;
     padding:1rem;

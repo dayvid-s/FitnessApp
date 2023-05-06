@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
       /* background-color: rgba(0, 0, 0, 0.1); */
       /* background: #221133; */
       /* background: rgb(32, 33, 37); */
-      background: #131215;
+      background:#F7F7F7;
       -webkit-font-smoothing: antialiased;
   }
   

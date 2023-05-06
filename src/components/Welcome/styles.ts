@@ -1,21 +1,23 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    height:13rem;
+    height:15rem;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
     padding:1rem;
-    margin-left: 2rem;
+    background-color: #121214;
     `
 export const PageInfoWrapper = styled.div`
     display: flex;
     flex-direction: row;
+    margin-left: 2rem;
+
 `
 
 export const TitleArea = styled.nav`
     a{
-        color:#d4d4d4;
+        color:#F7F7F7;
         margin-right: 1rem;
         font-size: 1rem;
     }
@@ -32,9 +34,10 @@ export const DateWrapper = styled.div`
 `
 export const WelcomeWrapper = styled.div`
     margin-top: 1rem;
+    margin-left: 2rem;
     h1{
         font-weight: 400;
-        color:#d4d4d4;
+        color:#F7F7F7;
         font-size: 2.4rem;
     }
     strong{

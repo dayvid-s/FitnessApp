@@ -9,11 +9,9 @@ export interface IconWrapperProps {
   
 
 export const Container = styled.div<ConteinerProps>`    
-    /* display: flex;
-    flex-direction: row; */
     height: 30vh;
     width: 22vw;
-    margin-top: -3.5rem;
+    margin-top: -5.0rem;
     position:absolute;
     border-radius:5px;
     padding:1rem;

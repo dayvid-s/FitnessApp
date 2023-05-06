@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
+    height:13rem;
     flex-direction: column;
-    height: 4rem;
     margin: 0 auto;
     align-items: center;
     padding:1rem;
     margin-left: 2rem;
-    height:11rem
     `
 export const PageInfoWrapper = styled.div`
     display: flex;

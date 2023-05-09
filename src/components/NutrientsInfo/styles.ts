@@ -92,7 +92,7 @@ export const RegisterMealButton = styled.button<IconWrapperProps>`
     display:flex;
     align-items: center;
     margin-top:1rem;
-    margin-left: 2rem;
+    margin-left: auto;
     background-color:#DBF2FD;
     font-family: roboto;
     font-weight:600;

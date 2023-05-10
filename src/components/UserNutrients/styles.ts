@@ -1,7 +1,9 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    background-color: #F7F7F7;
+    /* background-color: blue; */
+    background-color: #eee;
+
     height: 5vh;
     margin-top: 3rem;
     flex:1;

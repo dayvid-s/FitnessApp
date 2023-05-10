@@ -22,11 +22,13 @@ export const ChartWithUserStats = styled.div`
     h1{
         flex:1;
         color: #202020;
+        /* margin-left: 1rem; */
         font-weight: 500;
         font-size: 2rem;
     }
     div{
         flex:3;
+        background-color: #202020;
 
     }
     `

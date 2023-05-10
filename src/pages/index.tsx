@@ -1,7 +1,4 @@
-import { HomeHeader } from "@component/components/HomeHeader"
-import { UserNutrients } from "@component/components/UserNutrients"
-import { Welcome } from "@component/components/Welcome"
-import { GlobalStyle } from "@component/styles"
+import { GlobalStyle } from "@component/styles/styles"
 import Head from "next/head"
 import Home from "./Home/Index"
 

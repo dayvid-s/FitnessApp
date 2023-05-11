@@ -46,10 +46,12 @@ export const MacroNutrientsWrapper = styled.div`
     flex-direction: row;
     align-items:center;
     p{
-        color: #ffeaea;
+        color: #fff;
         margin-left: auto;
         font-size: 1.20rem;
         font-weight:600;     
+        font-family: "Montserrat", sans-serif;
+
     }
 
 `
@@ -94,10 +96,10 @@ export const RegisterMealButton = styled.button<IconWrapperProps>`
     margin-top:1rem;
     margin-left: auto;
     background-color:#DBF2FD;
-    font-family: roboto;
+    font-family: roboto, sans-serif;
+
     font-weight:600;
-    color:var(--text-title4fffff);
-    color:#4b4b4b;
+    color:#404040;
     padding: 12px 10px 10px;
     border-radius:5px;
     border: none;

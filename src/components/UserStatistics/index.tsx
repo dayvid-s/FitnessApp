@@ -2,13 +2,18 @@ import {
   Container,
   ChartWithUserStats,
   UserWaterStatsWrapper,
-  UserIndicatorContainer
+  UserIndicatorContainer,
+  UserEditWrapper,
+  UserObjectivesWrapper,
+  UserObjectivesRectangle
 } from "./styles"
 
 import React , {useState} from "react"
 import dynamic from "next/dynamic"
 const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false })
-import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar"
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
+import { AiOutlineUser } from "react-icons/ai"
+import { TitleArea } from "../Welcome/styles"
 
 
 export function UserStatistics (){
@@ -76,7 +81,12 @@ export function UserStatistics (){
         />
       </ChartWithUserStats>
       <UserWaterStatsWrapper>
-        <h1>Água</h1>
+        <div>
+
+          <h1>Água</h1>
+          <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
+            width="40" height="40"/>
+        </div>
 
         <CircularProgressbar
           styles={buildStyles({
@@ -99,8 +109,63 @@ export function UserStatistics (){
       </UserWaterStatsWrapper>
 
 
-    <UserIndicatorContainer></UserIndicatorContainer>
+      <UserIndicatorContainer>
+        <TitleArea>
+          <h1>Suas metas diárias</h1>
+        </TitleArea>
 
+        <AiOutlineUser size={"200px"} color="#212121" />
+        <h2>Indicadores Gerais</h2>
+        
+        <UserObjectivesWrapper>
+          <UserObjectivesRectangle>
+            <p>Calorias</p>
+            <p>0/2000</p>
+            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
+            width="20" height="20"/>
+
+          </UserObjectivesRectangle>
+
+
+          <UserObjectivesRectangle>
+            <p>Calorias <br/></p>
+            <p>0/2000</p>
+            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
+            width="20" height="20"/>
+
+
+            
+          </UserObjectivesRectangle>
+          
+          
+          <UserObjectivesRectangle>
+            <p>Calorias</p>
+            <p>0/2000</p>
+            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
+            width="20" height="20"/>
+
+
+          </UserObjectivesRectangle>
+          
+          
+          <UserObjectivesRectangle>
+            <p>Calorias</p>
+            <p>0/2000</p>
+            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
+            width="20" height="20"/>
+
+
+          </UserObjectivesRectangle>
+
+
+        
+        </UserObjectivesWrapper>
+        {/* <UserEditWrapper>
+          <p>Refazer metas</p>
+        </UserEditWrapper> */}
+      </UserIndicatorContainer>
+      
+          
       {/*  maybe this will be at another page. */}
     </Container>
   )

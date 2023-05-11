@@ -26,6 +26,9 @@ export function UserStatistics (){
     dataLabels: {
       enabled: false,
     },
+    fill: {
+      type: "gradient" 
+    },
     stroke: {
       curve: "smooth"
     },
@@ -58,13 +61,13 @@ export function UserStatistics (){
       {/*  maybe this will be at another page. */}
       <ChartWithUserStats>
         <h1>Perfomance semanal</h1>
-        <div>eae</div>
         <ApexCharts
           
           options={options}
           series={options.series}
-          type="line"
+          type="area"
           width={500}
+          
         />
         {/* use a fonte do video lá */}
       </ChartWithUserStats>

@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body, input, textarea, select, button{
     font:500 1rem sans-serif;
+    
 
 
   }

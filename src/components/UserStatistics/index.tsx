@@ -1,12 +1,19 @@
 import {
-  Container, ChartWithUserStats,
+  Container,
+  ChartWithUserStats,
+  UserWaterStatsWrapper,
+  UserIndicatorContainer
 } from "./styles"
+
 import React , {useState} from "react"
 import dynamic from "next/dynamic"
 const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false })
+import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar"
 
 
 export function UserStatistics (){
+  const percentage = 1.2
+
   const [options, setOptions] = useState({
     series: [{
       name: "Expectativa ",
@@ -16,8 +23,6 @@ export function UserStatistics (){
       data: [11, 32, 45, 32, 34, 52, 41]
     }],
     chart: {
-      height: 50,
-      type: "area",
       toolbar: {
         show: false,
       },
@@ -30,7 +35,6 @@ export function UserStatistics (){
       type: "gradient" 
     },
     stroke: {
-      curve: "smooth"
     },
     labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul"],
     markers: {
@@ -66,11 +70,37 @@ export function UserStatistics (){
           options={options}
           series={options.series}
           type="area"
-          width={500}
+          width={400}
+
           
         />
-        {/* use a fonte do video lá */}
       </ChartWithUserStats>
+      <UserWaterStatsWrapper>
+        <h1>Água</h1>
+
+        <CircularProgressbar
+          styles={buildStyles({
+            rotation: 0,
+            strokeLinecap: "round",
+            pathTransitionDuration: 2,
+            pathColor: "#fff" ,
+            textColor: "#8757E7",
+            trailColor: "#d6d6d6",
+            backgroundColor: "#3e98c7",
+          })}
+          value={percentage}  maxValue={2} 
+        />
+
+        <strong style={{position: "absolute", marginTop: -5,fontSize:"50px",color:"#fff" }} >{percentage}</strong> 
+        <p style={{position: "absolute", marginTop: 60,fontSize:"23px",color:"#fff" }} >Litros</p> 
+          
+
+
+      </UserWaterStatsWrapper>
+
+
+    <UserIndicatorContainer></UserIndicatorContainer>
+
       {/*  maybe this will be at another page. */}
     </Container>
   )

@@ -29,7 +29,7 @@ export function Welcome (){
       <WelcomeWrapper>
 
         <h1>Seja bem vindo, <strong>Dayvid.</strong></h1>
-        <p>Abaixo você verá os seus valores dos macronutrientes atuais.</p>
+        <p>Abaixo você verá os valores dos seus macronutrientes.</p>
       </WelcomeWrapper>
     </Container>
   )

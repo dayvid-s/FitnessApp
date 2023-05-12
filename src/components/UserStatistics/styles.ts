@@ -58,9 +58,9 @@ export const UserWaterStatsWrapper = styled.div`
     flex-direction: column;
     margin-left: 20px;
     display:flex;
-    background-color: #9462e6;
+    background: linear-gradient(264deg, rgba(219,84,255,1) 0%, rgba(148,187,233,1) 100%);
     height: 50vh;
-    width: 30vw;
+    width: 20vw;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2);
@@ -83,7 +83,7 @@ export const UserWaterStatsWrapper = styled.div`
     }
     img{
         display: flex;
-        margin-left:11rem;
+        margin-left:auto;
         margin-top: 10px;
 
     }
@@ -118,41 +118,62 @@ export const UserIndicatorContainer = styled.aside`
         color: #444444;
         
     }
-    
-    `
+    div:nth-child(1) {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 30px;
+        
+    }
+    div:nth-child(2) {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px;
+        
+    }
+    div:nth-child(3) {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px;
+        
+    }
+    div:nth-child(4) {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 30px;
+    }
+
+        `
 export const titleArea = styled.div`
     display:flex;
-    flex-direction:row; 
+    /* flex-direction:row;  */
     align-items: center;
     justify-content: center;
 `
 export const UserObjectivesWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
 
 `
 export const UserObjectivesRectangle = styled.div`
-    /* flex-flow: column wrap; */
-    /* width: 100%;
-    height: 100%; */
 
     display: flex;
     flex-direction: column;
-    padding:50px 20px;
-    background-color : rgb(40,40,40);
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    /* align-items: flex-start; */
-    /* justify-content: center; */
-    margin-right:5px;
-    /* display: block; */
-p{
-    color:#fff;
-    /* display: inline-block; */
-    /* margin-top: -50px; */
-    /* max-width:30px; */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:10px 20px;
+    width: 50%;
+    height: 240px;
+    border: 2px solid;
+    border-color: gray ;
+
+    /* background-color : rgb(40,40,40); */
+    background: #1D222F;
+    /* margin-right:5px; */
+    strong{
+        color:#00E7C9;
+        font-size:1.5rem;
+    }
+    p{
+        color:#fff;
+        margin-bottom: 10px;
+        font-size: 0.80rem;
 }
 `
 

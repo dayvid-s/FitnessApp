@@ -24,7 +24,7 @@ export function UserStatistics (){
       name: "Expectativa ",
       data: [31, 40, 28, 51, 42, 109, 100]
     }, {
-      name: "Reais Nutrients",
+      name: "Reais Nutrientes",
       data: [11, 32, 45, 32, 34, 52, 41]
     }],
     chart: {
@@ -93,9 +93,9 @@ export function UserStatistics (){
             rotation: 0,
             strokeLinecap: "round",
             pathTransitionDuration: 2,
-            pathColor: "#fff" ,
+            pathColor: "#00A5A4" ,
             textColor: "#8757E7",
-            trailColor: "#d6d6d6",
+            trailColor: "#303A39",
             backgroundColor: "#3e98c7",
           })}
           value={percentage}  maxValue={2} 
@@ -114,24 +114,26 @@ export function UserStatistics (){
           <h1>Suas metas diárias</h1>
         </TitleArea>
 
-        <AiOutlineUser size={"200px"} color="#212121" />
-        <h2>Indicadores Gerais</h2>
+        {/* <AiOutlineUser size={"200px"} color="#212121" /> */}
+        {/* <h2>Indicadores Gerais</h2> */}
         
         <UserObjectivesWrapper>
           <UserObjectivesRectangle>
-            <p>Calorias</p>
-            <p>0/2000</p>
-            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-            width="20" height="20"/>
+            <p>Calorias ingeridas</p>
+            <p><strong>1890</strong>/2000</p>
+            <p>Sódio</p>
+            <p><strong>1890</strong>/2000</p>
 
           </UserObjectivesRectangle>
 
 
           <UserObjectivesRectangle>
-            <p>Calorias <br/></p>
-            <p>0/2000</p>
-            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-            width="20" height="20"/>
+            <p>Carboidratos <br/></p>
+            <p><strong>1240</strong>/2000</p>
+            <p>Proteína<br/></p>
+            <p><strong>1240</strong>/2000</p>
+            <p>Gordura saturada<br/></p>
+            <p><strong>1240</strong>/2000</p>
 
 
             
@@ -139,20 +141,21 @@ export function UserStatistics (){
           
           
           <UserObjectivesRectangle>
-            <p>Calorias</p>
-            <p>0/2000</p>
+            <p>Calorias queimadas</p>
+            <p><strong>249</strong>/2000</p>
             <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-            width="20" height="20"/>
+              width="20" height="20"/>
 
 
           </UserObjectivesRectangle>
           
-          
           <UserObjectivesRectangle>
-            <p>Calorias</p>
-            <p>0/2000</p>
-            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-            width="20" height="20"/>
+            <p>Fibras<br/></p>
+            <p><strong>1240</strong>/2000</p>
+            <p>Colesterol<br/></p>
+            <p><strong>1240</strong>/2000</p>
+            <p>Água</p>
+            <p><strong>0.5</strong>/2 litros</p>
 
 
           </UserObjectivesRectangle>
@@ -160,9 +163,9 @@ export function UserStatistics (){
 
         
         </UserObjectivesWrapper>
-        {/* <UserEditWrapper>
+        <UserEditWrapper>
           <p>Refazer metas</p>
-        </UserEditWrapper> */}
+        </UserEditWrapper>
       </UserIndicatorContainer>
       
           

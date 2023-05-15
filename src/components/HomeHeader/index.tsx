@@ -17,11 +17,11 @@ export function HomeHeader (){
         width="30" height="30"/>
       <h3>FitnessApp</h3>
       <NavBar>
-        <Link legacyBehavior  href="/home">
-          <a>Visão Geral</a>
-        </Link>
+        <a>Visão Geral</a>
         <a>Dieta</a>   
-        <a>Treino</a>
+        <Link legacyBehavior  href="/workouts">
+          <a>Treino</a>
+        </Link>
         <a>Hábitos saudáveis</a>
       </NavBar>
       

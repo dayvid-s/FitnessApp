@@ -1,13 +1,13 @@
-/** @type {import('next').NextConfig} */
+// @ts-check
+// const { i18n } = require('./next-i18next.config.js');
+
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-    reactStrictMode: false,
-    compiler: {
-      // Enables the styled-components SWC transform
-      styledComponents: true
-    }
-  },
+  reactStrictMode: true,
+  compiler: { styledComponents: { ssr: true } },  
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

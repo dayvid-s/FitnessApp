@@ -40,13 +40,16 @@ export const GlobalStyle = createGlobalStyle`
       /* background-color: rgba(0, 0, 0, 0.1); */
       /* background: #221133; */
       /* background: rgb(32, 33, 37); */
-      background:#eee;
+      /* background-color: #121214; */
+      background-color: #eee;
+
       -webkit-font-smoothing: antialiased;
   }
   
   p,a, h1, h2, h3, h4, h5, h6{
     color:#e1e1e6;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 
 
   }

@@ -13,7 +13,6 @@ import dynamic from "next/dynamic"
 const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false })
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
 import { AiOutlineUser } from "react-icons/ai"
-import { TitleArea } from "../Welcome/styles"
 
 
 export function UserStatistics (){
@@ -69,7 +68,7 @@ export function UserStatistics (){
 
       {/*  maybe this will be at another page. */}
       <ChartWithUserStats>
-        <h1>Perfomance semanal</h1>
+        <h1>Calorias na semana</h1>
         <ApexCharts
           
           options={options}
@@ -110,9 +109,9 @@ export function UserStatistics (){
 
 
       <UserIndicatorContainer>
-        <TitleArea>
-          <h1>Suas metas diárias</h1>
-        </TitleArea>
+        {/* <TitleArea> */}
+        <h1>Suas metas diárias</h1>
+        {/* </TitleArea> */}
 
         {/* <AiOutlineUser size={"200px"} color="#212121" /> */}
         {/* <h2>Indicadores Gerais</h2> */}

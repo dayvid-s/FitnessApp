@@ -11,6 +11,7 @@ export const HeaderArea = styled.header`
     border-bottom: 0.80px solid;
     border-color: #353535;
     background-color: #121214;
+    background-color: #12121;
     img{
         margin-left: 0.5rem;
         cursor: pointer;

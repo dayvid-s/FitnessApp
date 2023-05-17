@@ -25,9 +25,9 @@ export const ChartWithUserStats = styled.div`
 
 h1{
         flex:1;
-        color: #444444;
+        color: #121212;
 
-        font-weight: 500;
+        font-weight: 600;
         font-size: 2rem;
         font-family: "Montserrat", sans-serif;
         margin-top:2rem;
@@ -105,17 +105,17 @@ export const UserIndicatorContainer = styled.aside`
     border-radius: 20px;
     padding:20px;
     h1{
-        color: #444444;
-        margin-right:5rem;
+        color: #000;
+        font-weight: 600px;
+        color: #121212;
+        margin: 5px auto 10px 10px;
     }
     p{
-        color: #444444;
         font-weight: 600;
         font-family: "Montserrat", sans-serif;
     }
     h2{
         margin-right: auto;
-        color: #444444;
         
     }
     div:nth-child(1) {
@@ -164,10 +164,10 @@ export const UserObjectivesRectangle = styled.div`
     border-color: gray ;
 
     /* background-color : rgb(40,40,40); */
-    background: #1D222F;
+    background: #1D1821;
     /* margin-right:5px; */
     strong{
-        color:#00E7C9;
+        color:#9a76d9;
         font-size:1.5rem;
     }
     p{
@@ -180,7 +180,8 @@ export const UserObjectivesRectangle = styled.div`
 
 export const UserEditWrapper = styled.div`
     padding:10px;
-    background-color : rgb(40,40,40);
+    background: #1D1821;
+
     border-radius: 10px;
     align-items: center;
     justify-content: center;

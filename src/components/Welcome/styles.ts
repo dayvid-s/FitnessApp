@@ -11,14 +11,14 @@ export const Container = styled.div`
 export const PageInfoWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 
 `
 
 export const TitleArea = styled.nav`
     a{
         color:#F7F7F7;
-        margin-right: 1rem;
+        /* margin-right: 1rem; */
         font-size: 1rem;
     }
 `

@@ -8,7 +8,6 @@ export const Container = styled.main`
     flex:1;
     margin-left: 2.5rem;
     margin-right: 2rem;
-    height: 500vh;
     `
 
 export const ChartWithUserStats = styled.div`

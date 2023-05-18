@@ -14,12 +14,7 @@ export default function Initial() {
       <Head>
         <title>Página inicial - FitnessApp</title>  
       </Head>      
-      {/* <Workouts/> */}
-      <HomeHeader></HomeHeader>
-      <Welcome/>
-      <UserNutrients/>
-      <UserStatistics/>
-
+      <Home/>
     </>
 
   )

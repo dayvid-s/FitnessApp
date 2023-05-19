@@ -37,7 +37,7 @@ export const WelcomeWrapper = styled.div`
     margin-left: 2rem;
     h1{
         font-weight: 400;
-        color:#F7F7F7;
+        /* color:#F7F7F7; */
         font-size: 2.4rem;
     }
     strong{

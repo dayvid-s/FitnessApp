@@ -7,21 +7,21 @@ import {
 } from "./styles"
 
 
-export function Welcome (){
-  
-  const dateOfToday= (new Date().toLocaleDateString([],
-    {weekday: "long", year: "numeric", month: "long", day: "numeric"}))
+export function Welcome() {
 
-  const dateCapitalized = dateOfToday.charAt(0).toUpperCase() + dateOfToday.slice(1).replace(".","")
+  const dateOfToday = (new Date().toLocaleDateString([],
+    { weekday: "long", year: "numeric", month: "long", day: "numeric" }))
 
-  return(
+  const dateCapitalized = dateOfToday.charAt(0).toUpperCase() + dateOfToday.slice(1).replace(".", "")
+
+  return (
     <Container>
       <PageInfoWrapper>
 
         <TitleArea>
-          <a>Visão Geral / <strong>Dieta</strong></a> 
+          <a>Visão Geral / <strong>Dieta</strong></a>
         </TitleArea>
-      
+
         <DateWrapper>
           <p>{dateCapitalized}</p>
         </DateWrapper>
@@ -29,8 +29,8 @@ export function Welcome (){
       <WelcomeWrapper>
 
         <h1>Seja bem vindo, <strong>Dayvid.</strong></h1>
-        <p>Abaixo você verá os valores dos seus macronutrientes, eles são baseados em<br/> seus objetivos. 
-          Seja eles ganho de peso, perda de peso ou manutenção.<br/>
+        <p>Abaixo você verá os valores dos seus macronutrientes, eles são baseados em<br /> seus objetivos.
+          Seja eles ganho de peso, perda de peso ou manutenção.<br />
           Não esqueça de registrar suas refeições para bater suas metas diárias!
         </p>
       </WelcomeWrapper>

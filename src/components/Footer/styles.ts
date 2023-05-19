@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const Container = styled.footer`
     background-color: #121214;
-    height:25rem;
-    padding:3rem 6rem 2rem;
+    height:30rem;
+    padding:3rem 2.5rem 2rem;
 `
-    
+
 export const WrapperOfFooterSessions = styled.div`
     display: flex;
     flex-direction: row;
@@ -59,9 +59,23 @@ export const DoubtSession = styled(ProductInfoSection)`
 `
 
 export const BottomOfFooter = styled.div`
+    background-color: #121214;
+    /* width:100vw; */
+    margin: 70px -40px 0 -40px;
     border-top: 1px solid #373737;
-    /* width: 100vw; */
-    margin-left:-100px;
-    margin-right:-100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:35px 40px;
+    p{
+        margin-right: auto;
+    }
+    svg{
+        width:30px;
+        height:30px;
+        color:#fff;
+        cursor: pointer;
+        margin-right: 10px;
+    }
     ;
 `

@@ -13,8 +13,8 @@ import {AiOutlineUser} from "react-icons/ai"
 export function HomeHeader (){
   return(
     <HeaderArea>
-      <img src="https://www.svgrepo.com/show/295450/vegetables-diet.svg"
-        width="30" height="30"/>
+      <img src="https://www.svgrepo.com/show/331727/healthy.svg"
+        width="40px" height="40px"/>
       <h3>FitnessApp</h3>
       <NavBar>
         <a>Visão Geral</a>

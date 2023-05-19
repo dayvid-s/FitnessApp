@@ -29,7 +29,10 @@ export function Welcome (){
       <WelcomeWrapper>
 
         <h1>Seja bem vindo, <strong>Dayvid.</strong></h1>
-        <p>Abaixo você verá os valores dos seus macronutrientes.</p>
+        <p>Abaixo você verá os valores dos seus macronutrientes, eles são baseados em<br/> seus objetivos. 
+          Seja eles ganho de peso, perda de peso ou manutenção.<br/>
+          Não esqueça de registrar suas refeições para bater suas metas diárias!
+        </p>
       </WelcomeWrapper>
     </Container>
   )

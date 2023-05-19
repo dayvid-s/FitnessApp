@@ -1,14 +1,67 @@
 import styled from "styled-components"
 
 export const Container = styled.footer`
-    border-top: 3px solid #dbdbdb;
+    background-color: #121214;
     height:25rem;
-    padding:1rem;
-    margin: 30px 2.5rem;
+    padding:3rem 6rem 2rem;
 `
-export const ProjectInfoArea = styled.section`
-    h1{
-        color:#9a76d9;
-        font-size:2rem;
+    
+export const WrapperOfFooterSessions = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
+
+export const ProjectInfoSection = styled.section`
+    div{
+        display:flex;
+        flex-direction: row;
+
     }
-    `
+    h1{
+        margin-left:10px;
+        color:#00BCF2;
+        font-size:2rem;
+        font-weight: 1000px;
+    }
+    p{
+        color: #aeaeb3;
+        margin:30px 0px;
+        width:25vw ;
+        line-height:20px;
+    }
+`
+
+export const ProductInfoSection = styled.section`
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    line-height:40px;
+
+    strong{ 
+        color:#fff;
+        font-weight: 600;
+        font-size: 1.10rem;
+    }
+    p{
+        color:#aeaeb3;
+        cursor: pointer;
+    }
+`
+
+
+export const SectionAbout = styled(ProductInfoSection)`
+    margin-left: 100px;
+`
+
+export const DoubtSession = styled(ProductInfoSection)`
+    margin-left: 100px;
+`
+
+export const BottomOfFooter = styled.div`
+    border-top: 1px solid #373737;
+    /* width: 100vw; */
+    margin-left:-100px;
+    margin-right:-100px;
+    ;
+`

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    height:15rem;
+    height:16.5rem;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
@@ -46,5 +46,6 @@ export const WelcomeWrapper = styled.div`
     p{
         margin-top:9px;
         font-size: 1.1rem;
+
     }
 `

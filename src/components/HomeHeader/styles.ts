@@ -11,7 +11,6 @@ export const HeaderArea = styled.header`
     border-bottom: 0.80px solid;
     border-color: #353535;
     background-color: #121214;
-    background-color: #12121;
     img{
         margin-left: 0.5rem;
         cursor: pointer;
@@ -19,13 +18,14 @@ export const HeaderArea = styled.header`
     h3{
         font-size: 1.8rem;
         cursor:pointer;
+        color:#fff;
     }
     `
 
 export const NavBar = styled.nav`
     margin-left:5rem;
     a{
-        color:#F7F7F7;
+        color:#aeaeb3;
         margin-right: 2rem;
         font-size: 1rem;
         cursor:pointer;
@@ -53,5 +53,8 @@ export const UserAccountArea = styled.div`
     svg{
         margin-right:1px;
         cursor:pointer;
+    }
+    p{
+        color:#aeaeb3;
     }
 `

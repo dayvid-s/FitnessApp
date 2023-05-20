@@ -48,7 +48,7 @@ export const UserAccountArea = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 2.5rem;
+    /* margin-right: 2.5rem; */
     margin-left: 10px;
     svg{
         margin-right:1px;

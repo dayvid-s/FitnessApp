@@ -155,11 +155,11 @@ export function UserStatistics() {
 
           <UserObjectivesRectangle>
             <p>Fibras<br /></p>
-            <p><strong>1240</strong>/2000</p>
+            {/* <p><strong>1240</strong>/2000</p>
             <p>Colesterol<br /></p>
             <p><strong>1240</strong>/2000</p>
             <p>Água</p>
-            <p><strong>0.5</strong>/2 litros</p>
+            <p><strong>0.5</strong>/2 litros</p> */}
 
 
           </UserObjectivesRectangle>

@@ -26,7 +26,7 @@ export const DateWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     margin-left: auto;
     p{
         font-size: 1rem;

@@ -141,6 +141,7 @@ export const UserIndicatorContainer = styled.aside`
     div:nth-child(4) {
         border-top-left-radius: 20px;
         border-bottom-right-radius: 30px;
+        
     }
 
         `
@@ -163,7 +164,7 @@ export const UserObjectivesRectangle = styled.div`
     justify-content: flex-start;
     padding:10px 20px;
     width: 50%;
-    height: 240px;
+    height: 155px;
     border: 2px solid;
     border-color: gray ;
 

@@ -1,12 +1,12 @@
-import styled, {css} from "styled-components"
+import styled, { css } from "styled-components"
 export interface ConteinerProps {
-    type: string  
-    marginLeft?: string  
-  }
+    type: string
+    marginLeft?: string
+}
 export interface IconWrapperProps {
-    nutrientType: string  
-  }
-  
+    nutrientType: string
+}
+
 
 export const Container = styled.div<ConteinerProps>`    
     height: 30vh;
@@ -16,25 +16,21 @@ export const Container = styled.div<ConteinerProps>`
     border-radius:5px;
     padding:1rem;
     
-    ${({type})=> (type == "carb")&& css`
+    ${({ type }) => (type == "carb") && css`
     background-color: var(--blue-light)`};
-    box-shadow: 2px 2px 10px var(--blue-light);
     
-    ${({type})=> (type == "protein")&& css`
+    ${({ type }) => (type == "protein") && css`
     background-color: var(--text-title);
-    box-shadow: 2px 2px 10px var(--text-title);
     
     margin-left:19rem`};
     
-    ${({type})=> (type == "fat")&& css`
+    ${({ type }) => (type == "fat") && css`
     background-color: var(--text-body);
     background-color: #ff59ac;
-    box-shadow: 2px 2px 10px var(--text-body);
     margin-left:38rem;`};
     
-    ${({type})=> (type == "fiber")&& css`
+    ${({ type }) => (type == "fiber") && css`
     background-color: var(--green);
-    box-shadow: 2px 5px 10px var(--green);
 
     margin-left:57rem;`};
     
@@ -67,16 +63,16 @@ export const IconWrapper = styled.div<IconWrapperProps>`
         width: 25px;
         height:25px;
         
-        ${({nutrientType})=> (nutrientType == "fiber")&& css`
+        ${({ nutrientType }) => (nutrientType == "fiber") && css`
         color: var(--green)`};
 
-        ${({nutrientType})=> (nutrientType == "carb")&& css`
+        ${({ nutrientType }) => (nutrientType == "carb") && css`
         color: var(--blue-light);`};
        
-        ${({nutrientType})=> (nutrientType == "protein")&& css`
+        ${({ nutrientType }) => (nutrientType == "protein") && css`
         color: var(--text-title);`};
        
-        ${({nutrientType})=> (nutrientType == "fat")&& css`
+        ${({ nutrientType }) => (nutrientType == "fat") && css`
         color:#ff59ac`};
 
         
@@ -115,16 +111,16 @@ export const RegisterMealButton = styled.button<IconWrapperProps>`
         width: 25px;
         height:25px;
         
-        ${({nutrientType})=> (nutrientType == "fiber")&& css`
+        ${({ nutrientType }) => (nutrientType == "fiber") && css`
         color: var(--green)`};
 
-        ${({nutrientType})=> (nutrientType == "carb")&& css`
+        ${({ nutrientType }) => (nutrientType == "carb") && css`
         color: var(--blue-light);`};
        
-        ${({nutrientType})=> (nutrientType == "protein")&& css`
+        ${({ nutrientType }) => (nutrientType == "protein") && css`
         color: var(--text-title);`};
        
-        ${({nutrientType})=> (nutrientType == "fat")&& css`
+        ${({ nutrientType }) => (nutrientType == "fat") && css`
         color:#ff59ac`};
 
     }

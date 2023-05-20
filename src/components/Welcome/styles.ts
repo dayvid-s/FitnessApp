@@ -6,7 +6,7 @@ export const Container = styled.div`
     margin: 0 auto;
     align-items: center;
     padding:1rem;
-    background-color: #121214;
+    /* background-color: #020210; */
     `
 export const PageInfoWrapper = styled.div`
     display: flex;
@@ -37,7 +37,7 @@ export const WelcomeWrapper = styled.div`
     margin-left: 2rem;
     h1{
         font-weight: 400;
-        /* color:#F7F7F7; */
+        color:#ccd6db;
         font-size: 2.4rem;
     }
     strong{

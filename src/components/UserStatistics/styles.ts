@@ -9,13 +9,16 @@ export const Container = styled.main`
     margin-left: 2.5rem;
     margin-right: 2rem;
     `
+export const Title = styled.h1`
 
+
+`
 export const ChartWithUserStats = styled.div`
     flex-direction: column;
     display:flex;
-    background-color: #f9f9f9;
+    background-color: #E7DCF4;
     height: 50vh;
-    width: 40vw;
+    width: 55vw;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2);
@@ -24,7 +27,7 @@ export const ChartWithUserStats = styled.div`
 
 h1{
         flex:1;
-        color: #121212;
+        color: #202020;
 
         font-weight: 600;
         font-size: 2rem;
@@ -43,8 +46,10 @@ h1{
     span {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
+        color:#fff;
     }
     .apexcharts-legend-text{
+        color:#fff;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         background-color:'blue';
@@ -57,7 +62,8 @@ export const UserWaterStatsWrapper = styled.div`
     flex-direction: column;
     margin-left: 20px;
     display:flex;
-    background: linear-gradient(264deg, rgba(219,84,255,1) 0%, rgba(148,187,233,1) 100%);
+    background: linear-gradient(264deg, #6E7BFB 0%,#8E7BFB 100%);
+    /* background: #E6F5FB; */
     height: 50vh;
     width: 20vw;
     align-items: center;
@@ -72,9 +78,9 @@ export const UserWaterStatsWrapper = styled.div`
 
     }
     h1{
-        color: #fff;
+        color: #FFF;
 
-        font-weight: 500;
+        font-weight: 600;
         font-size: 2rem;
         font-family: "Montserrat", sans-serif;
         margin-top:10px;
@@ -94,7 +100,7 @@ export const UserWaterStatsWrapper = styled.div`
 
 export const UserIndicatorContainer = styled.aside`
     display:flex;
-    background-color : #fff;
+    /* background-color : #1D1E24; */
     flex-direction: column;
     margin-left: 20px;
     height: 100vh;
@@ -102,12 +108,12 @@ export const UserIndicatorContainer = styled.aside`
     align-items: center;
     box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    padding:20px;
+    /* padding:20px; */
     h1{
-        color: #000;
+        color: #FFF;
         font-weight: 600px;
-        color: #121212;
-        margin: 5px auto 10px 10px;
+        margin-bottom: 10px;
+        /* margin: 0px 0px 10px 10px; */
     }
     p{
         font-weight: 600;
@@ -148,7 +154,6 @@ export const UserObjectivesWrapper = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 `
 export const UserObjectivesRectangle = styled.div`
 
@@ -163,7 +168,7 @@ export const UserObjectivesRectangle = styled.div`
     border-color: gray ;
 
     /* background-color : rgb(40,40,40); */
-    background: #1D1821;
+    background: #1D1E24;
     /* margin-right:5px; */
     strong{
         color:#9a76d9;

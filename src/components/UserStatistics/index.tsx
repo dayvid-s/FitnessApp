@@ -5,17 +5,18 @@ import {
   UserIndicatorContainer,
   UserEditWrapper,
   UserObjectivesWrapper,
-  UserObjectivesRectangle
+  UserObjectivesRectangle,
+  Title
 } from "./styles"
 
-import React , {useState} from "react"
+import React, { useState } from "react"
 import dynamic from "next/dynamic"
 const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false })
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
 import { AiOutlineUser } from "react-icons/ai"
 
 
-export function UserStatistics (){
+export function UserStatistics() {
   const percentage = 1.2
 
   const [options, setOptions] = useState({
@@ -36,7 +37,7 @@ export function UserStatistics (){
       enabled: false,
     },
     fill: {
-      type: "gradient" 
+      type: "gradient"
     },
     stroke: {
     },
@@ -63,28 +64,32 @@ export function UserStatistics (){
     }
   })
 
-  return(
+  return (
     <Container>
+      <Title>
 
+      </Title>
       {/*  maybe this will be at another page. */}
+
       <ChartWithUserStats>
         <h1>Calorias na semana</h1>
         <ApexCharts
-          
           options={options}
           series={options.series}
           type="area"
-          width={400}
-
-          
+          width={600}
+          height={200}
         />
       </ChartWithUserStats>
+
+
+
       <UserWaterStatsWrapper>
         <div>
 
           <h1>Água</h1>
           <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-            width="40" height="40"/>
+            width="40" height="40" />
         </div>
 
         <CircularProgressbar
@@ -92,17 +97,17 @@ export function UserStatistics (){
             rotation: 0,
             strokeLinecap: "round",
             pathTransitionDuration: 2,
-            pathColor: "#00A5A4" ,
+            pathColor: "#6E7BFB",
             textColor: "#8757E7",
-            trailColor: "#303A39",
+            trailColor: "#515264",
             backgroundColor: "#3e98c7",
           })}
-          value={percentage}  maxValue={2} 
+          value={percentage} maxValue={2}
         />
 
-        <strong style={{position: "absolute", marginTop: -5,fontSize:"50px",color:"#fff" }} >{percentage}</strong> 
-        <p style={{position: "absolute", marginTop: 60,fontSize:"23px",color:"#fff" }} >Litros</p> 
-          
+        <strong style={{ position: "absolute", marginTop: -5, fontSize: "50px", color: "#fff" }} >{percentage}</strong>
+        <p style={{ position: "absolute", marginTop: 60, fontSize: "23px", color: "#fff" }} >Litros</p>
+
 
 
       </UserWaterStatsWrapper>
@@ -110,12 +115,12 @@ export function UserStatistics (){
 
       <UserIndicatorContainer>
         {/* <TitleArea> */}
-        <h1>Suas metas diárias</h1>
+        {/* <h1>Suas metas diárias</h1> */}
         {/* </TitleArea> */}
 
         {/* <AiOutlineUser size={"200px"} color="#212121" /> */}
         {/* <h2>Indicadores Gerais</h2> */}
-        
+
         <UserObjectivesWrapper>
           <UserObjectivesRectangle>
             <p>Calorias ingeridas</p>
@@ -127,31 +132,31 @@ export function UserStatistics (){
 
 
           <UserObjectivesRectangle>
-            <p>Carboidratos <br/></p>
+            <p>Carboidratos <br /></p>
             <p><strong>1240</strong>/2000</p>
-            <p>Proteína<br/></p>
+            <p>Proteína<br /></p>
             <p><strong>1240</strong>/2000</p>
-            <p>Gordura saturada<br/></p>
+            <p>Gordura saturada<br /></p>
             <p><strong>1240</strong>/2000</p>
 
 
-            
+
           </UserObjectivesRectangle>
-          
-          
+
+
           <UserObjectivesRectangle>
             <p>Calorias queimadas</p>
             <p><strong>249</strong>/2000</p>
             <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-              width="20" height="20"/>
+              width="20" height="20" />
 
 
           </UserObjectivesRectangle>
-          
+
           <UserObjectivesRectangle>
-            <p>Fibras<br/></p>
+            <p>Fibras<br /></p>
             <p><strong>1240</strong>/2000</p>
-            <p>Colesterol<br/></p>
+            <p>Colesterol<br /></p>
             <p><strong>1240</strong>/2000</p>
             <p>Água</p>
             <p><strong>0.5</strong>/2 litros</p>
@@ -160,14 +165,14 @@ export function UserStatistics (){
           </UserObjectivesRectangle>
 
 
-        
+
         </UserObjectivesWrapper>
         <UserEditWrapper>
           <p>Refazer metas</p>
         </UserEditWrapper>
       </UserIndicatorContainer>
-      
-          
+
+
       {/*  maybe this will be at another page. */}
     </Container>
   )

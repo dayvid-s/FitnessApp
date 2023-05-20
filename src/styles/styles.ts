@@ -41,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
       /* background: #221133; */
       /* background: rgb(32, 33, 37); */
       /* background-color: #121214; */
-      background-color: #eee;
+      background-color: #020210;
 
       -webkit-font-smoothing: antialiased;
   }

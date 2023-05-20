@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.footer`
-    background-color: #121214;
+    /* background-color: #121214; */
     height:30rem;
     padding:3rem 2.5rem 2rem;
 `
@@ -59,7 +59,7 @@ export const DoubtSession = styled(ProductInfoSection)`
 `
 
 export const BottomOfFooter = styled.div`
-    background-color: #121214;
+    /* background-color: #121214; */
     /* width:100vw; */
     margin: 70px -40px 0 -40px;
     border-top: 1px solid #373737;

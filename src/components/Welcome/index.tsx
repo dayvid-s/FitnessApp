@@ -19,7 +19,7 @@ export function Welcome() {
       <PageInfoWrapper>
 
         <TitleArea>
-          <a>Visão Geral / <strong>Dieta</strong></a>
+          <a>Visão geral / <strong>Dieta</strong></a>
         </TitleArea>
 
         <DateWrapper>

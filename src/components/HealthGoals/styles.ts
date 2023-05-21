@@ -6,8 +6,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     height:15rem;
-    position: absolute;
-    top:850px;
+    /* position: absolute; */
+    /* top:850px; */
     width:30rem;
     /* padding:3rem   2.5rem 2rem; */
     margin-left:2.5rem;

@@ -13,9 +13,11 @@ export default function Home() {
       <HomeHeader />
       <Welcome />
       <UserNutrients />
-      <SectionTitle title="Metas diárias / Semanais" />
+      <SectionTitle title="Metas diárias / Semanais" button="RemakeGoals"  />
       <UserStatistics />
-      {/* <HealthGoals /> */}
+      <HealthGoals />
+      <SectionTitle 
+        title="Atividades recomendadas" button='Objective' />
       <Footer />
     </Container>
 

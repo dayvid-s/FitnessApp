@@ -100,10 +100,10 @@ export const UserWaterStatsWrapper = styled.div`
 
 export const UserIndicatorContainer = styled.aside`
     display:flex;
-    /* background-color : #1D1E24; */
+    /* background-color : #fff; */
+    /* height:100%; */
     flex-direction: column;
     margin-left: 20px;
-    height: 100vh;
     width: 30vw;
     align-items: center;
     box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2);

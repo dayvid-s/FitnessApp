@@ -16,57 +16,51 @@ export function HealthGoals() {
       />
       <ProgressBar
         maxCompleted={8}
-        // baseBgColor
-        completed={80}
+        completed='2'
         className="wrapper"
         barContainerClassName="container"
-        completedClassName="barCompleted"
         labelClassName={"label"}
       />
+
       <ProgressBar
         maxCompleted={8}
-
-        completed={80}
+        completed='7'
         className="wrapper"
         barContainerClassName="container"
-        completedClassName="barCompleted"
         labelClassName={"label"}
       />
+
       <ProgressBar
         maxCompleted={8}
-
-        completed={80}
+        completed='9'
         className="wrapper"
         barContainerClassName="container"
-        completedClassName="barCompleted"
         labelClassName={"label"}
       />
+
       <ProgressBar
         maxCompleted={8}
-
-        completed={80}
+        completed='9'
         className="wrapper"
         barContainerClassName="container"
-        completedClassName="barCompleted"
         labelClassName={"label"}
       />
+
       <ProgressBar
         maxCompleted={8}
-
-        completed={80}
+        completed='8'
         className="wrapper"
         barContainerClassName="container"
-        completedClassName="barCompleted"
         labelClassName={"label"}
       />
-      <ProgressBar
 
-        completed={80}
+      <ProgressBar
         maxCompleted={8}
+        completed='9'
         className="wrapper"
         barContainerClassName="container"
-        completedClassName="barCompleted"
         labelClassName={"label"}
+
       />
     </Container>
   )

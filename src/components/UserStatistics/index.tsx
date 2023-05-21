@@ -105,8 +105,15 @@ export function UserStatistics() {
           value={percentage} maxValue={2}
         />
 
-        <strong style={{ position: "absolute", marginTop: -5, fontSize: "50px", color: "#fff" }} >{percentage}</strong>
-        <p style={{ position: "absolute", marginTop: 60, fontSize: "23px", color: "#fff" }} >Litros</p>
+        <div style={{
+          position: "absolute", marginTop: -5, fontSize: "40px", color: "#fff" }}  >
+
+          <strong 
+          >{percentage}/2</strong>
+          <p style={{
+            position: "absolute", marginTop: 60, fontSize: "23px", color: "#fff" }} 
+          >Litros</p>
+        </div>
 
 
 
@@ -136,8 +143,8 @@ export function UserStatistics() {
             <p><strong>1240</strong>/2000</p>
             <p>Proteína<br /></p>
             <p><strong>1240</strong>/2000</p>
-            <p>Gordura saturada<br /></p>
-            <p><strong>1240</strong>/2000</p>
+            {/* <p>Gordura saturada<br /></p>
+            <p><strong>1240</strong>/2000</p> */}
 
 
 
@@ -147,18 +154,16 @@ export function UserStatistics() {
           <UserObjectivesRectangle>
             <p>Calorias queimadas</p>
             <p><strong>249</strong>/2000</p>
-            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-              width="20" height="20" />
 
 
           </UserObjectivesRectangle>
 
           <UserObjectivesRectangle>
             <p>Fibras<br /></p>
-            {/* <p><strong>1240</strong>/2000</p>
+            <p><strong>1240</strong>/2000</p>
             <p>Colesterol<br /></p>
             <p><strong>1240</strong>/2000</p>
-            <p>Água</p>
+            {/* <p>Água</p>
             <p><strong>0.5</strong>/2 litros</p> */}
 
 
@@ -167,9 +172,6 @@ export function UserStatistics() {
 
 
         </UserObjectivesWrapper>
-        <UserEditWrapper>
-          <p>Refazer metas</p>
-        </UserEditWrapper>
       </UserIndicatorContainer>
 
 

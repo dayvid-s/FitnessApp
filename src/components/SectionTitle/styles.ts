@@ -65,8 +65,11 @@ export const UserObjectivesArea = styled.div`
 
   margin-left: auto;
   margin-right:2.5rem;
+  background-color: #fff;
+  padding: 10px 60px;
+  border-radius: 20px;
   p{
-      color:#fff;
+      color:#000;
       font-weight: 600;
       font-family: "Montserrat", sans-serif;
   }

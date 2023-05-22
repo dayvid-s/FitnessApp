@@ -6,6 +6,7 @@ import { UserStatistics } from "@component/components/UserStatistics"
 import { Footer } from "./../../components/Footer"
 import { HealthGoals } from "./../../components/HealthGoals"
 import { SectionTitle } from "@component/components/SectionTitle"
+import { RecommendedActivities } from "@component/components/RecommendedActivities"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HealthGoals />
       <SectionTitle 
         title="Atividades recomendadas" button='Objective' />
+      <RecommendedActivities/>
       <Footer />
     </Container>
 

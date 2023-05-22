@@ -6,7 +6,6 @@ export const Container = styled.div`
   align-items: center;
   margin-left:2.5rem;
   margin-top:50px;
-  margin-bottom:-30px;
   div:nth-child(1){
     padding:30px 5px;
     background-color: #fff;
@@ -21,7 +20,7 @@ export const Container = styled.div`
 
 
 
-export const UserEditWrapper = styled.div`
+export const UserEditWrapper = styled.button`
   padding:10px;
   background: #1D1821;
 
@@ -30,6 +29,7 @@ export const UserEditWrapper = styled.div`
   justify-content: center;
   margin-top: 10px;
   border-bottom-left-radius: 30px;
+  border: none;
 
   margin-left: auto;
   margin-right:2.5rem;
@@ -40,3 +40,35 @@ export const UserEditWrapper = styled.div`
       font-family: "Montserrat", sans-serif;
   }
 `
+
+
+
+export const RemakeGoalsButton = styled.button`
+  padding:10px;
+  background: #1D1821;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-bottom-left-radius: 30px;
+  margin-left: auto;
+  margin-right:2.5rem;
+  cursor: pointer;
+  p{
+      color:#fff;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+  }
+`
+
+export const UserObjectivesArea = styled.div`
+
+  margin-left: auto;
+  margin-right:2.5rem;
+  p{
+      color:#fff;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+  }
+`
+

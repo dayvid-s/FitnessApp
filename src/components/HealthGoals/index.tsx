@@ -1,67 +1,76 @@
 import ProgressBar from "@ramonak/react-progress-bar"
 import {
-  Container,
+  Container, ProgressBarArea, TitleArea,
 } from "./styles"
 
 export function HealthGoals() {
 
   return (
     <Container>
-      <ProgressBar
-        maxCompleted={8}
-        completed='5'
-        className="wrapper"
-        barContainerClassName="container"
-        labelClassName={"label"}
-      />
-      <ProgressBar
-        maxCompleted={8}
-        completed='2'
-        className="wrapper"
-        barContainerClassName="container"
-        labelClassName={"label"}
-      />
+      <TitleArea>
+        <h2>Tempo de sono</h2>
+        <h2>6.4 <span>horas</span> </h2>
+        
+      </TitleArea>
+      
+      <ProgressBarArea>
 
-      <ProgressBar
-        maxCompleted={8}
-        completed='7'
-        className="wrapper"
-        barContainerClassName="container"
-        labelClassName={"label"}
-      />
+        <ProgressBar
+          maxCompleted={8}
+          completed='5'
+          className="wrapper"
+          barContainerClassName="container"
+          labelClassName={"label"}
+        />
+        <ProgressBar
+          maxCompleted={8}
+          completed='2'
+          className="wrapper"
+          barContainerClassName="container"
+          labelClassName={"label"}
+        />
 
-      <ProgressBar
-        maxCompleted={8}
-        completed='9'
-        className="wrapper"
-        barContainerClassName="container"
-        labelClassName={"label"}
-      />
+        <ProgressBar
+          maxCompleted={8}
+          completed='7'
+          className="wrapper"
+          barContainerClassName="container"
+          labelClassName={"label"}
+        />
 
-      <ProgressBar
-        maxCompleted={8}
-        completed='9'
-        className="wrapper"
-        barContainerClassName="container"
-        labelClassName={"label"}
-      />
+        <ProgressBar
+          maxCompleted={8}
+          completed='9'
+          className="wrapper"
+          barContainerClassName="container"
+          labelClassName={"label"}
+        />
 
-      <ProgressBar
-        maxCompleted={8}
-        completed='8'
-        className="wrapper"
-        barContainerClassName="container"
-        labelClassName={"label"}
-      />
+        <ProgressBar
+          maxCompleted={8}
+          completed='9'
+          className="wrapper"
+          barContainerClassName="container"
+          labelClassName={"label"}
+        />
 
-      <ProgressBar
-        maxCompleted={8}
-        completed='9'
-        className="wrapper"
-        barContainerClassName="container"
-        labelClassName={"label"}
+        <ProgressBar
+          maxCompleted={8}
+          completed='8'
+          className="wrapper"
+          barContainerClassName="container"
+          labelClassName={"label"}
+        />
 
-      />
+        <ProgressBar
+          maxCompleted={8}
+          completed='9'
+          className="wrapper"
+          barContainerClassName="container"
+          labelClassName={"label"}
+
+        />
+      </ProgressBarArea>
     </Container>
   )
 }

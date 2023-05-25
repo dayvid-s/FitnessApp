@@ -18,7 +18,9 @@ export default function Home() {
       <UserStatistics />
       <HealthGoals />
       <SectionTitle 
-        title="Atividades recomendadas" button='Objective' />
+        title="Atividades recomendadas para perda de peso" button='Objective' />
+      {/* aqui será condicional/ para ganho de peso/manuntenção/ ou perda de peso */}
+      {/* irei usar o $ para colocar variaveis nesse texto */}
       <RecommendedActivities/>
       <Footer />
     </Container>

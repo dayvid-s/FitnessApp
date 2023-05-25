@@ -97,9 +97,9 @@ export function UserStatistics() {
             rotation: 0,
             strokeLinecap: "round",
             pathTransitionDuration: 2,
-            pathColor: "#6E7BFB",
+            pathColor: "#6d20f1",
             textColor: "#8757E7",
-            trailColor: "#515264",
+            trailColor: "#2B2A33",
             backgroundColor: "#3e98c7",
           })}
           value={percentage} maxValue={2}

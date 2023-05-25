@@ -21,10 +21,10 @@ export function UserStatistics() {
 
   const [options, setOptions] = useState({
     series: [{
-      name: "Expectativa ",
+      name: "Meta",
       data: [31, 40, 28, 51, 42, 109, 100]
     }, {
-      name: "Reais Nutrientes",
+      name: "Meu resultado",
       data: [11, 32, 45, 32, 34, 52, 41]
     }],
     chart: {

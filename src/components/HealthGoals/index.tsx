@@ -16,6 +16,8 @@ export function HealthGoals() {
       <ProgressBarArea>
 
         <ProgressBar
+          transitionDuration="3"
+          // completedClassName="barCompleted"
           maxCompleted={8}
           completed='5'
           className="wrapper"

@@ -7,6 +7,7 @@ import { Footer } from "./../../components/Footer"
 import { HealthGoals } from "./../../components/HealthGoals"
 import { SectionTitle } from "@component/components/SectionTitle"
 import { RecommendedActivities } from "@component/components/RecommendedActivities"
+import { TrainningAndFoods } from "@component/components/TrainningAndFoods"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       {/* aqui será condicional/ para ganho de peso/manuntenção/ ou perda de peso */}
       {/* irei usar o $ para colocar variaveis nesse texto */}
       <RecommendedActivities/>
+      <TrainningAndFoods />
       <Footer />
     </Container>
 

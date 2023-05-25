@@ -4,7 +4,7 @@ export const Container = styled.div`
   background-color: #CACBFD;
   border-radius: 20px;
   height:15rem;
-  width:30rem;
+  width:25rem;
   margin-left:2.5rem;
   margin-top: 3rem;
   `
@@ -51,7 +51,9 @@ export const ProgressBarArea = styled.div`
 
   .barCompleted {
       border-radius:30px;
-      background-color: #683FDC;
+      /* background-color: #683FDC; */
+      background: linear-gradient(04deg, #683FDC 100%,#8E7BFB 0%);
+
       width: 80%;
   }
 

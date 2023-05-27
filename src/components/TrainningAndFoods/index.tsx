@@ -44,7 +44,7 @@ export function TrainningAndFoods( ) {
 
           </FoodsWrapper>
           <FoodsWrapper>
-            <h1>Panqueca doce com Whey protein </h1>
+            <h1>Panqueca com Whey protein </h1>
             <div>
               <p>Essa panqueca com whey protein vai deixar todo mundo querendo mais!
               </p>
@@ -57,9 +57,7 @@ export function TrainningAndFoods( ) {
           <FoodsWrapper>
             <h1>Mingau de aveia com morango </h1>
             <div>
-              <p> Ótimo alimento rico em fibras e carboidratos. perfeito para inicio do dia
-
-              </p>
+              <p> Mingau super prático especialmente para quem esta sem apetite. </p>
               <Image src={OatMealPorridge} width={190} height={150} alt={"Mingau de aveia"} />
             </div>
 

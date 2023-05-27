@@ -35,7 +35,7 @@ export const ImageArea = styled.div`
   display: flex;
   flex-direction: column;
   margin-top:20px;
-  background-color: #661A95;
+  background-color: #FFF3CA;
   width: 300px;
   height:250px;
   border-radius: 10px;
@@ -45,8 +45,8 @@ export const ImageArea = styled.div`
   cursor: pointer;
   p{
     font-size: 1rem;
-    color:#fff;
-    font-weight:500;
+    color:#000;
+    font-weight:600;
     margin-right: auto;
     margin-left:10px;
   }
@@ -71,6 +71,12 @@ export const FoodsArea= styled.div`
 export const FoodsList = styled.div`
   display: flex;
   flex-direction: row;
+  div:nth-child(1){
+    background-color: #CCFFA3;
+  }
+  div:nth-child(3){
+    background-color: #FDDCE0;
+  }
   `
 export const FoodsWrapper = styled.div`
   margin-right: 20px;
@@ -86,7 +92,7 @@ export const FoodsWrapper = styled.div`
     margin-top: 10px;
     color: #000;
      /* margin-left: 10px; */
-     font-size:1.5rem;
+     font-size:1.2rem;
      /* justify-self: center; */
      
     }

@@ -27,6 +27,7 @@ export const RecommendedActivityWrapper = styled.div`
   p{
     margin-left:10px;
     color:#fff;
+    /* font-weight: 500; */
   }
 `
 

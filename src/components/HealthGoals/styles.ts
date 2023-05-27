@@ -11,20 +11,22 @@ export const Container = styled.div`
 
 export const TitleArea = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 15px 20px 100px ;
   h2:nth-child(-n+2){
+     /*Represents the first two elements */
     font-family: Montserrat;
     color: #000;
     font-size: 1.2rem;
   }
+  h2:nth-child(2){
+    margin-left: auto;
+  }
   span{
     color: #000;
     font-size: 1rem;
+  }
+  svg{
 
-    /* white-space: normal; */
-    
   }
 
 `

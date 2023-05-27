@@ -16,7 +16,7 @@ export const Title = styled.h1`
 export const ChartWithUserStats = styled.div`
     flex-direction: column;
     display:flex;
-    background-color: #E7DCF4;
+    background-color: #1D1E24;
     height: 50vh;
     width: 55vw;
     align-items: center;
@@ -27,7 +27,7 @@ export const ChartWithUserStats = styled.div`
 
 h1{
         flex:1;
-        color: #202020;
+        color: #fff;
 
         font-weight: 600;
         font-size: 2rem;
@@ -60,10 +60,10 @@ h1{
 export const UserWaterStatsWrapper = styled.div`
     display:flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-right: 20px;
     display:flex;
-    background: linear-gradient(264deg, #6E7BFB 0%,#8E7BFB 100%);
-    /* background: #E6F5FB; */
+    /* background: linear-gradient(264deg, #6E7BFB 0%,#8E7BFB 100%); */
+    background: #1D1E24;
     height: 50vh;
     width: 20vw;
     align-items: center;
@@ -80,9 +80,9 @@ export const UserWaterStatsWrapper = styled.div`
     h1{
         color: #FFF;
 
-        font-weight: 600;
+        font-weight: 700;
         font-size: 2rem;
-        font-family: "Montserrat", sans-serif;
+        /* font-family: "Montserrat", sans-serif; */
         margin-top:10px;
         
     }

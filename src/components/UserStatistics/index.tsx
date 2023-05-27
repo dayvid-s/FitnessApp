@@ -67,6 +67,41 @@ export function UserStatistics() {
   return (
     <Container>
       <Title>
+        <UserWaterStatsWrapper>
+          <div>
+
+            <h1>Água</h1>
+            <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
+              width="40" height="40" />
+          </div>
+
+          <CircularProgressbar
+            styles={buildStyles({
+              rotation: 0,
+              strokeLinecap: "round",
+              pathTransitionDuration: 2,
+              pathColor: "#6d20f1",
+              textColor: "#8757E7",
+              trailColor: "#2B2A33",
+              backgroundColor: "#3e98c7",
+            })}
+            value={percentage} maxValue={2}
+          />
+
+          <div style={{
+            position: "absolute", marginTop: -5, fontSize: "40px", color: "#fff" }}  >
+
+            <strong 
+            >{percentage}/2</strong>
+            <p style={{
+              position: "absolute", marginTop: 60, fontSize: "23px", color: "#fff" }} 
+            >Litros</p>
+          </div>
+
+
+
+        </UserWaterStatsWrapper>
+
 
       </Title>
       {/*  maybe this will be at another page. */}
@@ -83,41 +118,6 @@ export function UserStatistics() {
       </ChartWithUserStats>
 
 
-
-      <UserWaterStatsWrapper>
-        <div>
-
-          <h1>Água</h1>
-          <img src="https://www.svgrepo.com/show/509617/bottle1.svg"
-            width="40" height="40" />
-        </div>
-
-        <CircularProgressbar
-          styles={buildStyles({
-            rotation: 0,
-            strokeLinecap: "round",
-            pathTransitionDuration: 2,
-            pathColor: "#6d20f1",
-            textColor: "#8757E7",
-            trailColor: "#2B2A33",
-            backgroundColor: "#3e98c7",
-          })}
-          value={percentage} maxValue={2}
-        />
-
-        <div style={{
-          position: "absolute", marginTop: -5, fontSize: "40px", color: "#fff" }}  >
-
-          <strong 
-          >{percentage}/2</strong>
-          <p style={{
-            position: "absolute", marginTop: 60, fontSize: "23px", color: "#fff" }} 
-          >Litros</p>
-        </div>
-
-
-
-      </UserWaterStatsWrapper>
 
 
       <UserIndicatorContainer>

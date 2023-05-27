@@ -49,6 +49,8 @@ export const GlobalStyle = createGlobalStyle`
   p,a, h1, h2, h3, h4, h5, h6{
     color:#aeaeb3;
     font-family: 'Roboto', sans-serif;
+    /* font-family: 'Neue Haas Grotesk Text Pro', sans-serif; */
+
     /* font-family: 'Open Sans', sans-serif; */
 
 

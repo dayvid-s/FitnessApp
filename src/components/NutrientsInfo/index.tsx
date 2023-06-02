@@ -6,8 +6,10 @@ import {
   RegisterMealButton,
   TotalNutrientsArea
 } from "./styles"
-import React from "react"
+import React, { useState } from "react"
+
 import {BsFillArrowRightSquareFill} from "react-icons/bs"
+import { ModalForRegisterFoods } from "../ModalForRegisterFoods"
 
 
 export interface InutrientsInfoProps {
@@ -19,9 +21,13 @@ export function NutrientsInfo ({
   type,
   Icon
 }:InutrientsInfoProps){
+  const [modalIsOpen, setIsOpen] =useState(false)
+  function toogleModal(modal: boolean ) {
+    {console.log(modalIsOpen)}
+    modal == true? setIsOpen(false): setIsOpen(true)
+  }
   
   
-
   return(
     <Container type={type} >
       <MacroNutrientsWrapper>
@@ -34,10 +40,13 @@ export function NutrientsInfo ({
         <p>Carboidratos</p>
       </MacroNutrientsWrapper>
       
+      <ModalForRegisterFoods modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
       <TotalNutrientsArea>
         <p>Total de <strong>0</strong> Carboidratos consumidos hoje</p>
       
-        <RegisterMealButton nutrientType={type} >REGISTRAR REFEIÇÃO
+        <RegisterMealButton 
+          onClick={()=>{toogleModal(modalIsOpen)}}
+          nutrientType={type} >REGISTRAR REFEIÇÃO
 
           <BsFillArrowRightSquareFill/>
         </RegisterMealButton>

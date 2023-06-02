@@ -17,11 +17,12 @@ export const ChartWithUserStats = styled.div`
     flex-direction: column;
     display:flex;
     background-color: #1D1E24;
+    box-shadow: 2px -2px 5px 2px rgba(171,171,171,0.49);
     height: 50vh;
     width: 55vw;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2); */
     border-radius: 10px;
 
 
@@ -62,13 +63,14 @@ export const UserWaterStatsWrapper = styled.div`
     flex-direction: column;
     margin-right: 20px;
     display:flex;
+    box-shadow: 2px -2px 5px 2px rgba(171,171,171,0.49);
+
     /* background: linear-gradient(264deg, #6E7BFB 0%,#8E7BFB 100%); */
     background: #1D1E24;
     height: 50vh;
     width: 20vw;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     div{
         display: flex;
@@ -106,9 +108,9 @@ export const UserIndicatorContainer = styled.aside`
     margin-left: 20px;
     width: 30vw;
     align-items: center;
-    box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     /* padding:20px; */
+    
     h1{
         color: #FFF;
         font-weight: 600px;
@@ -183,7 +185,7 @@ export const UserObjectivesRectangle = styled.div`
 `
 
 
-export const UserEditWrapper = styled.div`
+export const UserEditWrapper = styled.button`
     padding:10px;
     background: #1D1821;
 

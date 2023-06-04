@@ -46,7 +46,7 @@ export const GlobalStyle = createGlobalStyle`
       -webkit-font-smoothing: antialiased;
   }
   
-  p,a, h1, h2, h3, h4, h5, h6{
+  p,a, h1, h2, h3, h4, h5, h6, li,strong {
     color:#aeaeb3;
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Neue Haas Grotesk Text Pro', sans-serif; */

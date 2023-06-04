@@ -1,9 +1,16 @@
+// TODO: UI LIKE A TODO LIST // MODERN TODO LIST UI 
 import {
-  Container,
+  Container, 
+  FoodList, 
+  FoodListItem, 
+  FoodListWrapper,
+  ModalTopArea,
 } from "./styles"
 import Modal from "react-modal"
 import React, { Dispatch, SetStateAction, useState } from "react"
-
+import {IoClose} from "react-icons/io5"
+import {AiOutlineSearch} from "react-icons/ai"
+import {BsThreeDotsVertical} from "react-icons/bs"
 export interface ImodalProps {
   modalIsOpen: boolean,
   setIsOpen: Dispatch<SetStateAction<boolean>>
@@ -11,16 +18,24 @@ export interface ImodalProps {
 
 
 export function ModalForRegisterFoods({modalIsOpen, setIsOpen  } : ImodalProps) {
-  let subtitle
+  const arrayMockup ={
+    "name": "Lasanha",
+    "calories": 340,
+    "proteins": 16.5,
+    "carbs": 34.2,
+    "totalFats": 14.8,
+    "saturatedFats": 8.6,
+    "polyUnsaturatedFats": 1.4,
+    "sodium": 550,
+    "dietFiber": 1.8  }
 
   const customStyles = {
     overlay: {
-      position: "fixed",
       top: 0,
       left: 0,
       right: 0,
       bottom: 0,
-      backgroundColor: "rgba(0,0,0,0.7)"
+      backgroundColor: "rgba(0,0,0,0.8)"
     },
     content: {
       top: "50%",
@@ -28,51 +43,111 @@ export function ModalForRegisterFoods({modalIsOpen, setIsOpen  } : ImodalProps) 
       right: "auto",
       bottom: "auto",
       border: "none",
-      padding: "20vh 20vw",
-
+      borderRadius: "5px",
+      padding: "0vh 0vw",
+      transform: "translate(-50%, -50%)",
+      background: "#181818",
+      
 
       // marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      backgroundColor: "#181818"
 
     },
   }
 
 
   function toogleModal(modal: boolean ) {
-    modal == true? setIsOpen(false): setIsOpen(true)
+    setIsOpen((prevState) => !prevState)
+
   }
 
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00"
-  }
 
 
   return (
-    <Container>
+    <>
       <Modal
-       isOpen={modalIsOpen}
+        isOpen={modalIsOpen}
         // modalIsOpen={true}
-        onAfterOpen={afterOpenModal}
         onRequestClose={()=>setIsOpen(false)}
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        {/* <button onClick={()=>{toogleModal(modalIsOpen)}}>close</button> */}
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
+        <Container>
+          <ModalTopArea>
+            <AiOutlineSearch/>
+            {/* <form> */}
+            <input
+              type="text" name="input" 
+              placeholder="Que tal pesquisar algum alimento" 
+            />
+            <IoClose onClick={()=>{setIsOpen(false)}} />
+
+          </ModalTopArea>
+
+          <FoodListWrapper>
+            <h3  >Alimentos encontrados</h3>
+            <FoodList>
+              <div style={{display :"flex", flexDirection:"row", justifyContent: "space-between" }} >
+                <FoodListItem>Arroz integral</FoodListItem>
+
+                <BsThreeDotsVertical style={{
+                  color: "#606060",
+                  width:"25px",
+                  height:"25px",
+                  opacity: "0.9",
+                  cursor:"pointer",}} />
+              </div>
+
+              <div style={{display:"flex",
+                height:"150px", flexFlow: "columnWrap"}} >
+              
+                <div style={{marginTop:"10px",borderLeft: "5px blue solid", height:"30px",width:"80px", display: "flex", 
+                  flexDirection:"row",alignItems: "center", justifyContent:"space-between"
+                }}>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >Carboidratos </p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >213.9g</p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >5%</p>
+                  
+                </div>
+                <div style={{marginTop:"10px",borderLeft: "5px blue solid", height:"30px",width:"80px", display: "flex", 
+                  flexDirection:"row",alignItems: "center", justifyContent:"space-between"
+                }}>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >Carboidratos </p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >213.9g</p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >5%</p>
+                  
+                </div>
+                <div style={{marginTop:"10px",borderLeft: "5px blue solid", height:"30px",width:"80px", display: "flex", 
+                  flexDirection:"row",alignItems: "center", justifyContent:"space-between"
+                }}>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >Carboidratos </p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >213.9g</p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >5%</p>
+                  
+                </div>
+                <div style={{marginTop:"10px",borderLeft: "5px blue solid", height:"30px",width:"80px", display: "flex", 
+                  flexDirection:"row",alignItems: "center", justifyContent:"space-between"
+                }}>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >Carboidratos </p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >213.9g</p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >5%</p>
+                  
+                </div>
+                <div style={{marginTop:"10px",borderLeft: "5px blue solid", height:"30px",width:"80px", display: "flex", 
+                  flexDirection:"row",alignItems: "center", justifyContent:"space-between"
+                }}>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >Carboidratos </p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >213.9g</p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >5%</p>
+                  
+                </div>
+              </div>
+            </FoodList>
+          </FoodListWrapper>
+
+        </Container>
       </Modal>
+    </>
 
-
-    </Container>
   )
 }

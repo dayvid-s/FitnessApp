@@ -39,7 +39,7 @@ export function TrainningAndFoods( ) {
             <h1>Crepioca recheada de frango</h1>
             <div>
               <p>Lanche nutritivo e saudável para você substituir pães e massas!</p>
-              <Image src={Crepioca} width={150} height={150} alt={"Mingau de aveia"} />
+              <Image src={Crepioca} width={150} height={150} alt={"Crepioca"} />
             </div>
 
           </FoodsWrapper>

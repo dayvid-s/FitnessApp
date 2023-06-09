@@ -57,14 +57,25 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, select, button{
-    font:500 1rem sans-serif;
+    font:500 1rem Montserrat, sans-serif;
     
 
 
   }
+input{
+  outline: 0;
+  border: none;
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+}
 button{
   cursor: pointer;
+  border:"none";
+  
 }
 
 a{

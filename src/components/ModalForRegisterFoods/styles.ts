@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  width: 60vw;
-  height: 70vh;
+  width: 70vw;
+  height: 85vh;
   background: rgb(173,63,251);
   background: linear-gradient(170deg, #181818 10%, rgba(10,10,10,5) 100%);
-  background:#1c1d22;
+  background:#101010;
   /* padding:10px 20px; */
 `
 export const ModalTopArea = styled.div`
@@ -32,7 +32,7 @@ input{
   outline: 0;
   border: none;
   margin-left: 10px;
-  background-color:#181818;
+  background-color:transparent;
   width: 30vw;
   color: #fff;
   font-family: 'Roboto'
@@ -46,16 +46,15 @@ export const FoodListWrapper = styled.div`
 
 export const FoodList = styled.ul`
   list-style: none;
-  padding: 0;
   margin-top:20px;
   display:flex;
-  flex-direction: row;
   /* align-items: center; */
-  background-color: #292B31;
+  background-color: #131313;
   /* border-radius: 15px; */
   padding:10px 15px;
   display:flex;
   flex-direction: column;
+  height:370px;
 `
 
 export const FoodListItem = styled.li`

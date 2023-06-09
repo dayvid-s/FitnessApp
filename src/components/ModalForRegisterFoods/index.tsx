@@ -1,4 +1,4 @@
-// TODO: UI LIKE A TODO LIST // MODERN TODO LIST UI 
+// TODO: adicionar recolher e abrir conteudo do alimento encontrado.
 import {
   Container, 
   FoodList, 
@@ -66,6 +66,8 @@ export function ModalForRegisterFoods({modalIsOpen, setIsOpen  } : ImodalProps) 
   return (
     <>
       <Modal
+        preventScroll={true}
+        ariaHideApp={false}
         isOpen={modalIsOpen}
         // modalIsOpen={true}
         onRequestClose={()=>setIsOpen(false)}
@@ -77,6 +79,9 @@ export function ModalForRegisterFoods({modalIsOpen, setIsOpen  } : ImodalProps) 
             <AiOutlineSearch/>
             {/* <form> */}
             <input
+              
+              autoComplete="off"
+              
               type="text" name="input" 
               placeholder="Que tal pesquisar algum alimento" 
             />
@@ -85,7 +90,7 @@ export function ModalForRegisterFoods({modalIsOpen, setIsOpen  } : ImodalProps) 
           </ModalTopArea>
 
           <FoodListWrapper>
-            <h3  >Alimentos encontrados</h3>
+            <h3 style={{margin: "10px 15px"}} >Alimentos encontrados</h3>
             <FoodList>
               <div style={{display :"flex", flexDirection:"row", justifyContent: "space-between" }} >
                 <FoodListItem>Arroz integral</FoodListItem>
@@ -99,7 +104,7 @@ export function ModalForRegisterFoods({modalIsOpen, setIsOpen  } : ImodalProps) 
               </div>
 
               <div style={{display:"flex",
-                height:"150px", flexFlow: "columnWrap"}} >
+                height:"150px", flexFlow: "column wrap"}} >
               
                 <div style={{marginTop:"10px",borderLeft: "5px blue solid", height:"30px",width:"80px", display: "flex", 
                   flexDirection:"row",alignItems: "center", justifyContent:"space-between"
@@ -140,6 +145,35 @@ export function ModalForRegisterFoods({modalIsOpen, setIsOpen  } : ImodalProps) 
                   <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >213.9g</p>
                   <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >5%</p>
                   
+                </div>
+                <div style={{marginTop:"10px",borderLeft: "5px blue solid", height:"30px",width:"80px", display: "flex", 
+                  flexDirection:"row",alignItems: "center", justifyContent:"space-between"
+                }}>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >Carboidratos </p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >213.9g</p>
+                  <p style={{fontFamily:"Montserrat",marginLeft:"10px",color: "#fff"}} >5%</p>
+                  
+                </div>
+
+                  
+              </div>
+              <div style={{marginTop:"50px", height:"30px", display: "flex", 
+                flexDirection:"row",alignItems: "center", 
+              }}>
+                <p style={{fontFamily:"Montserrat",color: "#fff",fontSize:"0.85rem",width:"400px"}} >
+                A porcentagem (%), ao lado da quantidade em gramas, mostra quanto de um nutriente específico você estará 
+                consumindo em relação à quantidade recomendada para o dia.
+                </p>
+                <div style={{marginLeft:"120px",width: "250px"}} >
+                  <p style={{fontFamily:"Montserrat",marginTop:"10px",marginLeft:"10px",color: "#fff",fontSize:"0.80rem"}} >Quantidade</p>
+                  <input type="number" style={{padding:"10px 20px",color:"#fff",marginTop:"5px", backgroundColor:"#000",borderRadius:"10px"}}>
+                  </input>
+                  <p style={{fontFamily:"Montserrat",marginTop:"10px",marginLeft:"10px",color: "#fff",fontSize:"0.80rem"}} >Peso em gramas</p>
+                  <input type="number"  style={{padding:"10px 20px",color:"#fff",marginTop:"5px", backgroundColor:"#000",borderRadius:"10px"}}>
+                  </input>
+                  <button style={{padding:"12px 80px",border: "none",marginTop:"10px", backgroundColor:"#82FFAC",borderRadius:"10px"}}>
+                    <h4 style={{fontFamily:"Montserrat",color: "#000",display:"flex",justifyContent:"center" }} >Adicionar</h4>
+                  </button>
                 </div>
               </div>
             </FoodList>

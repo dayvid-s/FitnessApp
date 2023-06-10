@@ -1,13 +1,27 @@
 import styled from "styled-components"
 
+
 export const Container = styled.div`
   width: 70vw;
   height: 85vh;
   background: rgb(173,63,251);
   background: linear-gradient(170deg, #181818 10%, rgba(10,10,10,5) 100%);
   background:#101010;
-  /* padding:10px 20px; */
-`
+
+  overflow: auto;
+  
+  &::-webkit-scrollbar {
+  width: 10px;
+
+  background-color: #101010; 
+}
+
+/* Add a thumb */
+&::-webkit-scrollbar-thumb {
+  background: darkgrey;
+}
+  `
+
 export const ModalTopArea = styled.div`
   display:flex;
   flex-direction: row;
@@ -38,13 +52,13 @@ input{
   font-family: 'Roboto'
 }
 `
+
 export const FoodListWrapper = styled.div`
-  /* display: flex;
-  flex-direction: row; */
-  /* padding:20px 20px; */
-`
+  `
+
 
 export const FoodList = styled.ul`
+  margin-bottom:30px;
   list-style: none;
   margin-top:20px;
   display:flex;
@@ -58,7 +72,6 @@ export const FoodList = styled.ul`
 `
 
 export const FoodListItem = styled.li`
-  /* margin-bottom: 10px; */
   font-size: 1.5rem;
 
-`
+  `

@@ -36,14 +36,25 @@ export const GlobalStyle = createGlobalStyle`
 }
 
   body{
-    /* background-color: linear-gradient(8deg,#221133,rgba(1, 2, 17)); */
-      /* background-color: rgba(0, 0, 0, 0.1); */
-      /* background: #221133; */
-      /* background: rgb(32, 33, 37); */
-      /* background-color: #121214; */
-      background-color: #020210;
+  /* background-color: linear-gradient(8deg,#221133,rgba(1, 2, 17)); */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    /* background: #221133; */
+    /* background: rgb(32, 33, 37); */
+    /* background-color: #121214; */
+    background-color: #020210;
+    ::-webkit-scrollbar {
+    width: 5px;
+    
+}
 
-      -webkit-font-smoothing: antialiased;
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+  -webkit-font-smoothing: antialiased;
   }
   
   p,a, h1, h2, h3, h4, h5, h6, li,strong {

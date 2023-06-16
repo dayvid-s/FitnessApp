@@ -2,76 +2,109 @@ import styled from "styled-components"
 
 
 export const Container = styled.div`
-  width: 70vw;
-  height: 85vh;
-  background: rgb(173,63,251);
-  background: linear-gradient(170deg, #181818 10%, rgba(10,10,10,5) 100%);
-  background:#101010;
-
-  overflow: auto;
-  
-  &::-webkit-scrollbar {
-  width: 10px;
-
-  background-color: #101010; 
-}
-
-/* Add a thumb */
-&::-webkit-scrollbar-thumb {
-  background: darkgrey;
-}
-  `
-
-export const ModalTopArea = styled.div`
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 1px #212121 solid;
-  /* opacity:0.6; */
-  padding:20px 20px;
-  svg{
-  color:#aeaeb3;
-  width:30px;
-  height:30px;
-  opacity: 0.9;
-  cursor:pointer;
-}
-svg:nth-of-type(2){
-  margin-left: auto;
-}
-p{
-  margin-left:10px;
-}
-input{
-  outline: 0;
-  border: none;
-  margin-left: 10px;
-  background-color:transparent;
-  width: 30vw;
-  color: #fff;
-  font-family: 'Roboto'
-}
-`
-
-export const FoodListWrapper = styled.div`
-  `
-
-
-export const FoodList = styled.ul`
-  margin-bottom:30px;
+    margin-bottom:30px;
   list-style: none;
   margin-top:20px;
   display:flex;
-  /* align-items: center; */
   background-color: #131313;
-  /* border-radius: 15px; */
   padding:10px 15px;
   display:flex;
   flex-direction: column;
   height:370px;
+
+
+  svg{
+    color:#aeaeb3;
+    width:25px;
+    height:30px;
+    opacity: 0.9;
+    cursor:pointer;
+}
+  svg:nth-of-type(1){
+    margin-left: auto;
+    width:30px;
+    height:30px;
+
+}
+  `
+
+export const FoodNameAndActions = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+export const NutrientsInfoList = styled.ul`
+  display: flex;
+  height: 150px;
+  flex-flow: column wrap;
+`
+
+export const NutrientArea = styled.div`
+  margin-top: 10px;
+  border-left: 5px blue solid;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`
+export const NutrientText = styled.p`
+  font-family: Montserrat;
+  margin-left: 10px;
+  color: #fff;
+`
+
+export const AreaOfAddingNutrientAmounts = styled.div`
+  margin-top: 50px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `
 
 export const FoodListItem = styled.li`
   font-size: 1.5rem;
 
   `
+
+
+export const InformationText = styled.p`
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 0.85rem;
+  width: 400px;
+`
+
+export const AddFoodArea = styled.div`
+  margin-left: 120px;
+  width: 250px;
+  input{
+    padding: 10px 20px;
+    color: #fff;
+    margin-top: 5px;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  button{
+    padding: 12px 80px;
+    border: none;
+    margin-top: 10px;
+    background-color: #82ffac;
+    border-radius: 10px;
+  }
+  h4{
+    font-family: "Montserrat";
+    color: #000;
+    display: flex;
+    justify-content: center;
+  }
+`
+export const InputTitle = styled.p`
+  font-family: Montserrat;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 0.80rem;
+`

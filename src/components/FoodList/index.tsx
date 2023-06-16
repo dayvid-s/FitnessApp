@@ -1,16 +1,18 @@
 // TODO: adicionar recolher e abrir conteudo do alimento encontrado.
 import {
+  AddFoodArea,
+  AreaOfAddingNutrientAmounts,
+  InputTitle,
   Container,
-  FoodList,
   FoodListItem,
-  FoodListWrapper,
-  ModalTopArea,
+  FoodNameAndActions,
+  InformationText,
+  NutrientArea,
+  NutrientText,
+  NutrientsInfoList,
 } from "./styles"
-import Modal from "react-modal"
 import { Animation } from "rsuite"
 import React, { Dispatch, SetStateAction, useState } from "react"
-import { IoClose } from "react-icons/io5"
-import { AiOutlineSearch } from "react-icons/ai"
 import { BsThreeDotsVertical } from "react-icons/bs"
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md"
 export interface ImodalProps {
@@ -50,314 +52,105 @@ export function FoodsList() {
   Panel.displayName = "Panel"
   
   
-  const arrayMockup = {
+  const arrayMockup = [{
+    "id": "1",
     "name": "Lasanha",
-    "calories": 340,
-    "proteins": 16.5,
-    "carbs": 34.2,
-    "totalFats": 14.8,
-    "saturatedFats": 8.6,
-    "polyUnsaturatedFats": 1.4,
-    "sodium": 550,
-    "dietFiber": 1.8
-  }
-
+    nutrients: {
+      
+      "calories": 340,
+      "proteins": 16.5,
+      "carbs": 34.2,
+      "totalFats": 14.8,
+      "saturatedFats": 8.6,
+      "polyUnsaturatedFats": 1.4,
+      "sodium": 550,
+      "dietFiber": 1.8
+    }
+  } ]
   return (
     <>
 
-      <FoodList>
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }} >
+      <Container>
+        <FoodNameAndActions>
           <FoodListItem>Arroz integral</FoodListItem>
           <MdKeyboardArrowDown  onClick={onChange} />
           {/* <MdKeyboardArrowUp/> */}
 
-          <BsThreeDotsVertical style={{
-            color: "#606060",
-            width: "25px",
-            height: "25px",
-            opacity: "0.9",
-            cursor: "pointer",
-          }} />
-        </div>
+          <BsThreeDotsVertical />
+        </FoodNameAndActions>
 
-        <div style={{
-          display: "flex",
-          height: "150px", flexFlow: "column wrap"
-        }} >
+        <NutrientsInfoList>
 
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
+          {arrayMockup.map((Food) =>{
+            return (
+              
+              <NutrientArea key={Food.id} >
+                <NutrientText></NutrientText>
+                <NutrientText>213.9g</NutrientText>
+                <NutrientText>5%</NutrientText>
+              </NutrientArea>
+            )
+            
+          })}
+          <NutrientArea>
+            <NutrientText>Carboidratos </NutrientText>
+            <NutrientText>213.9g</NutrientText>
+            <NutrientText>5%</NutrientText>
 
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
+          </NutrientArea>
+          <NutrientArea>
+            <NutrientText>Carboidratos </NutrientText>
+            <NutrientText>213.9g</NutrientText>
+            <NutrientText>5%</NutrientText>
 
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
+          </NutrientArea>
+          <NutrientArea>
+            <NutrientText>Carboidratos </NutrientText>
+            <NutrientText>213.9g</NutrientText>
+            <NutrientText>5%</NutrientText>
 
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
+          </NutrientArea>
+          <NutrientArea>
+            <NutrientText>Carboidratos </NutrientText>
+            <NutrientText>213.9g</NutrientText>
+            <NutrientText>5%</NutrientText>
 
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
+          </NutrientArea>
+          <NutrientArea>
+            <NutrientText>Carboidratos </NutrientText>
+            <NutrientText>213.9g</NutrientText>
+            <NutrientText>5%</NutrientText>
 
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
+          </NutrientArea>
+          <NutrientArea>
+            <NutrientText>Carboidratos </NutrientText>
+            <NutrientText>213.9g</NutrientText>
+            <NutrientText>5%</NutrientText>
 
-          </div>
+          </NutrientArea>
 
 
-        </div>
-        <div style={{
-          marginTop: "50px", height: "30px", display: "flex",
-          flexDirection: "row", alignItems: "center",
-        }}>
-          <p style={{ fontFamily: "Montserrat", color: "#fff", fontSize: "0.85rem", width: "400px" }} >
-                  A porcentagem (%), ao lado da quantidade em gramas, mostra quanto de um nutriente específico você estará
-                  consumindo em relação à quantidade recomendada para o dia.
-          </p>
-          <div style={{ marginLeft: "120px", width: "250px" }} >
-            <p style={{ fontFamily: "Montserrat", marginTop: "10px", marginLeft: "10px", color: "#fff", fontSize: "0.80rem" }} >Quantidade</p>
-            <input defaultValue={0} type="number" style={{ padding: "10px 20px", color: "#fff", marginTop: "5px", backgroundColor: "#000", borderRadius: "10px" }}>
+        </NutrientsInfoList>
+
+        <AreaOfAddingNutrientAmounts>
+          <InformationText >
+            A porcentagem (%), ao lado da quantidade em gramas, mostra quanto de um nutriente específico você estará
+            consumindo em relação à quantidade recomendada para o dia.
+          </InformationText>
+          <AddFoodArea>
+            <InputTitle>Quantidade</InputTitle>
+            <input defaultValue={0} type="number" >
             </input>
-            <p style={{ fontFamily: "Montserrat", marginTop: "10px", marginLeft: "10px", color: "#fff", fontSize: "0.80rem" }} >Peso em gramas</p>
-            <input defaultValue={0} type="number" style={{ padding: "10px 20px", color: "#fff", marginTop: "5px", backgroundColor: "#000", borderRadius: "10px" }}>
+            <InputTitle>Peso em gramas</InputTitle>
+            <input defaultValue={0} type="number" >
               {/* must have a hover that change the border color to blue and also when is writing */}
             </input>
-            <button style={{ padding: "12px 80px", border: "none", marginTop: "10px", backgroundColor: "#82FFAC", borderRadius: "10px" }}>
-              <h4 style={{ fontFamily: "Montserrat", color: "#000", display: "flex", justifyContent: "center" }} >Adicionar</h4>
+            <button >
+              <h4>Adicionar</h4>
             </button>
-          </div>
-        </div>
-      </FoodList>
-      <FoodList>
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }} >
-          <FoodListItem>Arroz integral</FoodListItem>
-
-          <BsThreeDotsVertical style={{
-            color: "#606060",
-            width: "25px",
-            height: "25px",
-            opacity: "0.9",
-            cursor: "pointer",
-          }} />
-        </div>
-
-        <div style={{
-          display: "flex",
-          height: "150px", flexFlow: "column wrap"
-        }} >
-          <Animation.Collapse in={show}>
-            {(props, ref) => <Panel {...props} ref={ref} />}
-          </Animation.Collapse>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-
-
-        </div>
-        <div style={{
-          marginTop: "50px", height: "30px", display: "flex",
-          flexDirection: "row", alignItems: "center",
-        }}>
-          <p style={{ fontFamily: "Montserrat", color: "#fff", fontSize: "0.85rem", width: "400px" }} >
-                  A porcentagem (%), ao lado da quantidade em gramas, mostra quanto de um nutriente específico você estará
-                  consumindo em relação à quantidade recomendada para o dia.
-          </p>
-          <div style={{ marginLeft: "120px", width: "250px" }} >
-            <p style={{ fontFamily: "Montserrat", marginTop: "10px", marginLeft: "10px", color: "#fff", fontSize: "0.80rem" }} >Quantidade</p>
-            <input type="number" style={{ padding: "10px 20px", color: "#fff", marginTop: "5px", backgroundColor: "#000", borderRadius: "10px" }}>
-            </input>
-            <p style={{ fontFamily: "Montserrat", marginTop: "10px", marginLeft: "10px", color: "#fff", fontSize: "0.80rem" }} >Peso em gramas</p>
-            <input type="number" style={{ padding: "10px 20px", color: "#fff", marginTop: "5px", backgroundColor: "#000", borderRadius: "10px" }}>
-            </input>
-            <button style={{ padding: "12px 80px", border: "none", marginTop: "10px", backgroundColor: "#82FFAC", borderRadius: "10px" }}>
-              <h4 style={{ fontFamily: "Montserrat", color: "#000", display: "flex", justifyContent: "center" }} >Adicionar</h4>
-            </button>
-          </div>
-        </div>
-      </FoodList>
-      <FoodList>
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }} >
-          <FoodListItem>Arroz integral</FoodListItem>
-
-          <BsThreeDotsVertical style={{
-            color: "#606060",
-            width: "25px",
-            height: "25px",
-            opacity: "0.9",
-            cursor: "pointer",
-          }} />
-        </div>
-
-        <div style={{
-          display: "flex",
-          height: "150px", flexFlow: "column wrap"
-        }} >
-
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-          <div style={{
-            marginTop: "10px", borderLeft: "5px blue solid", height: "30px", width: "80px", display: "flex",
-            flexDirection: "row", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >Carboidratos </p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >213.9g</p>
-            <p style={{ fontFamily: "Montserrat", marginLeft: "10px", color: "#fff" }} >5%</p>
-
-          </div>
-
-
-        </div>
-        <div style={{
-          marginTop: "50px", height: "30px", display: "flex",
-          flexDirection: "row", alignItems: "center",
-        }}>
-          <p style={{ fontFamily: "Montserrat", color: "#fff", fontSize: "0.85rem", width: "400px" }} >
-                  A porcentagem (%), ao lado da quantidade em gramas, mostra quanto de um nutriente específico você estará
-                  consumindo em relação à quantidade recomendada para o dia.
-          </p>
-          <div style={{ marginLeft: "120px", width: "250px" }} >
-            <p style={{ fontFamily: "Montserrat", marginTop: "10px", marginLeft: "10px", color: "#fff", fontSize: "0.80rem" }} >Quantidade</p>
-            <input type="number" style={{ padding: "10px 20px", color: "#fff", marginTop: "5px", backgroundColor: "#000", borderRadius: "10px" }}>
-            </input>
-            <p style={{ fontFamily: "Montserrat", marginTop: "10px", marginLeft: "10px", color: "#fff", fontSize: "0.80rem" }} >Peso em gramas</p>
-            <input type="number" style={{ padding: "10px 20px", color: "#fff", marginTop: "5px", backgroundColor: "#000", borderRadius: "10px" }}>
-            </input>
-            <button style={{ padding: "12px 80px", border: "none", marginTop: "10px", backgroundColor: "#82FFAC", borderRadius: "10px" }}>
-              <h4 style={{ fontFamily: "Montserrat", color: "#000", display: "flex", justifyContent: "center" }} >Adicionar</h4>
-            </button>
-          </div>
-        </div>
-      </FoodList>
+          </AddFoodArea>
+        </AreaOfAddingNutrientAmounts>
+      </Container>
 
     </>
 

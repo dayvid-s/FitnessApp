@@ -7,7 +7,7 @@ import Modal from "react-modal"
 import React, { Dispatch, SetStateAction } from "react"
 import { IoClose } from "react-icons/io5"
 import { AiOutlineSearch } from "react-icons/ai"
-import { FoodsList } from "../FoodList"
+import { FoodList } from "../FoodList"
 export interface ImodalProps {
   modalIsOpen: boolean,
   setIsOpen: Dispatch<SetStateAction<boolean>>
@@ -15,14 +15,15 @@ export interface ImodalProps {
 
 
 export function ModalForRegisterFoods({ modalIsOpen, setIsOpen }: ImodalProps) {
-  const Panel = React.forwardRef<HTMLDivElement>((props, ref)=>{
-    
-    return(
-    
-        
+
+  const Panel = React.forwardRef<HTMLDivElement>((props, ref) => {
+
+    return (
+
+
       <div
         {...props}
-        ref={ref}  
+        ref={ref}
         style={{
           background: "#000",
           width: 100,
@@ -41,8 +42,8 @@ export function ModalForRegisterFoods({ modalIsOpen, setIsOpen }: ImodalProps) {
   )
 
   Panel.displayName = "Panel"
-  
-  
+
+
 
   const customStyles = {
     overlay: {
@@ -94,7 +95,12 @@ export function ModalForRegisterFoods({ modalIsOpen, setIsOpen }: ImodalProps) {
 
           <FoodListWrapper>
             <h3 style={{ margin: "10px 15px" }} >Alimentos encontrados</h3>
-            <FoodsList />
+
+            <FoodList />
+            <FoodList />
+            <FoodList />
+            <FoodList />
+
           </FoodListWrapper>
 
         </Container>

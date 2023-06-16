@@ -22,17 +22,16 @@ export const Container = styled.div<ConteinerProps>`
     ${({ type }) => (type == "protein") && css`
     background-color: var(--text-title);
     
-    margin-left:19rem`};
+    `};
     
     ${({ type }) => (type == "fat") && css`
     background-color: var(--text-body);
-    background-color: #ff59ac;
-    margin-left:38rem;`};
+    background-color: #ff59ac;`};
     
     ${({ type }) => (type == "fiber") && css`
     background-color: var(--green);
 
-    margin-left:57rem;`};
+    `};
     
     
     

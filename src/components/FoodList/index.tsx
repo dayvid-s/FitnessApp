@@ -1,4 +1,5 @@
 // TODO: adicionar recolher e abrir conteudo do alimento encontrado.
+// .Adicionar cor responsiva ao nutrient em nutrient area
 import {
   AddFoodArea,
   AreaOfAddingNutrientAmounts,
@@ -15,119 +16,35 @@ import { Animation } from "rsuite"
 import React, { Dispatch, SetStateAction, useState } from "react"
 import { BsThreeDotsVertical } from "react-icons/bs"
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md"
-export interface ImodalProps {
-  modalIsOpen: boolean,
-  setIsOpen: Dispatch<SetStateAction<boolean>>
+export interface IFoodListProps {
+  showAnimation: boolean,
+  setShowAnimation: Dispatch<SetStateAction<boolean>>
 }
 
 
-export function FoodsList() {
-  const [show, setShow] = React.useState(true)
-  const onChange = () => setShow(!show)
-  const Panel = React.forwardRef<HTMLDivElement>((props, ref)=>{
-    
-    return(
-    
-        
-      <div
-        {...props}
-        ref={ref}  
-        style={{
-          background: "#000",
-          width: 100,
-          height: 88,
-          display: "inline-block",
-          overflow: "hidden"
-        }}
-      >
-        <div>
-          <p>Panel</p>
-          <p>Content Content Content</p>
-        </div>
-      </div>
-    )
-  }
-  )
+export function FoodList() {
+  const [showAnimation, setShowAnimation] = useState(false)
+  const onChange = () => setShowAnimation(!showAnimation)
+  const Panel = React.forwardRef<HTMLDivElement>((props, ref) => {
 
-  Panel.displayName = "Panel"
-  
-  
-  const arrayMockup = [{
-    "id": "1",
-    "name": "Lasanha",
-    nutrients: {
-      
-      "calories": 340,
-      "proteins": 16.5,
-      "carbs": 34.2,
-      "totalFats": 14.8,
-      "saturatedFats": 8.6,
-      "polyUnsaturatedFats": 1.4,
-      "sodium": 550,
-      "dietFiber": 1.8
-    }
-  } ]
-  return (
-    <>
+    return (
 
-      <Container>
-        <FoodNameAndActions>
-          <FoodListItem>Arroz integral</FoodListItem>
-          <MdKeyboardArrowDown  onClick={onChange} />
-          {/* <MdKeyboardArrowUp/> */}
 
-          <BsThreeDotsVertical />
-        </FoodNameAndActions>
-
+      <div {...props} ref={ref}>
         <NutrientsInfoList>
 
-          {arrayMockup.map((Food) =>{
+          {arrayMockup.map((NutrientName, index) => {
             return (
-              
-              <NutrientArea key={Food.id} >
-                <NutrientText></NutrientText>
+
+              <NutrientArea key={index} type='protein' >
+                {/* aqui precisa estar responsivo ao tipo de nutrient */}
+                <NutrientText>{NutrientName}</NutrientText>
                 <NutrientText>213.9g</NutrientText>
                 <NutrientText>5%</NutrientText>
               </NutrientArea>
             )
-            
+
           })}
-          <NutrientArea>
-            <NutrientText>Carboidratos </NutrientText>
-            <NutrientText>213.9g</NutrientText>
-            <NutrientText>5%</NutrientText>
-
-          </NutrientArea>
-          <NutrientArea>
-            <NutrientText>Carboidratos </NutrientText>
-            <NutrientText>213.9g</NutrientText>
-            <NutrientText>5%</NutrientText>
-
-          </NutrientArea>
-          <NutrientArea>
-            <NutrientText>Carboidratos </NutrientText>
-            <NutrientText>213.9g</NutrientText>
-            <NutrientText>5%</NutrientText>
-
-          </NutrientArea>
-          <NutrientArea>
-            <NutrientText>Carboidratos </NutrientText>
-            <NutrientText>213.9g</NutrientText>
-            <NutrientText>5%</NutrientText>
-
-          </NutrientArea>
-          <NutrientArea>
-            <NutrientText>Carboidratos </NutrientText>
-            <NutrientText>213.9g</NutrientText>
-            <NutrientText>5%</NutrientText>
-
-          </NutrientArea>
-          <NutrientArea>
-            <NutrientText>Carboidratos </NutrientText>
-            <NutrientText>213.9g</NutrientText>
-            <NutrientText>5%</NutrientText>
-
-          </NutrientArea>
 
 
         </NutrientsInfoList>
@@ -150,6 +67,45 @@ export function FoodsList() {
             </button>
           </AddFoodArea>
         </AreaOfAddingNutrientAmounts>
+      </div>
+    )
+  }
+  )
+
+  Panel.displayName = "Panel"
+
+
+  const arrayMockup = [
+
+    "calories",
+    "proteins",
+    "carbs",
+    "totalFats",
+    "saturatedFats",
+    "polyUnsaturatedFats",
+    "sodium",
+    "dietFiber"
+  ]
+  return (
+    <>
+
+      <Container>
+        <FoodNameAndActions onClick={onChange} >
+          <FoodListItem>Arroz integral</FoodListItem>
+          {showAnimation == true ? (
+            <MdKeyboardArrowUp onClick={onChange} />
+          ) : (
+            <MdKeyboardArrowDown onClick={onChange} />
+          )}
+
+          <BsThreeDotsVertical />
+        </FoodNameAndActions>
+
+
+        <Animation.Collapse in={showAnimation}>
+          {(props, ref) => <Panel {...props} ref={ref} />}
+        </Animation.Collapse>
+
       </Container>
 
     </>

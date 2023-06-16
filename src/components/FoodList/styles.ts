@@ -1,8 +1,10 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
-
+export interface INutrientArea {
+  type: string
+}
 export const Container = styled.div`
-    margin-bottom:30px;
+  margin-bottom:30px;
   list-style: none;
   margin-top:20px;
   display:flex;
@@ -10,7 +12,7 @@ export const Container = styled.div`
   padding:10px 15px;
   display:flex;
   flex-direction: column;
-  height:370px;
+  /* height:370px; */
 
 
   svg{
@@ -32,6 +34,8 @@ export const FoodNameAndActions = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
+
 `
 
 export const NutrientsInfoList = styled.ul`
@@ -40,15 +44,17 @@ export const NutrientsInfoList = styled.ul`
   flex-flow: column wrap;
 `
 
-export const NutrientArea = styled.div`
+export const NutrientArea = styled.div<INutrientArea>`
   margin-top: 10px;
-  border-left: 5px blue solid;
   height: 30px;
   width: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  ${({ type }) => (type == "protein") && css`
+  border-left: 5px var(--green) solid`};
+
 `
 export const NutrientText = styled.p`
   font-family: Montserrat;
@@ -57,8 +63,7 @@ export const NutrientText = styled.p`
 `
 
 export const AreaOfAddingNutrientAmounts = styled.div`
-  margin-top: 50px;
-  height: 30px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -85,7 +90,11 @@ export const AddFoodArea = styled.div`
     color: #fff;
     margin-top: 5px;
     background-color: #000;
+    border:1px solid transparent;
     border-radius: 10px;
+     :focus {
+      border: 1px solid #82ffac; 
+  }
   }
   button{
     padding: 12px 80px;

@@ -13,8 +13,8 @@ export const Container = styled.div`
   `
 
 
-  
-export const TrainningArea= styled.div`
+
+export const TrainningArea = styled.div`
   h3{
     color:#fff;
     font-size:1.5rem;
@@ -23,7 +23,7 @@ export const TrainningArea= styled.div`
   
   `
 
-export const TrainningTitleWrapper= styled.div`
+export const TrainningTitleWrapper = styled.div`
   display: flex;
   flex-direction : row;
   border-left: 10px #fff solid;
@@ -59,7 +59,7 @@ export const CbumImage = styled(Image)`
 `
 
 
-export const FoodsArea= styled.div`
+export const FoodsArea = styled.div`
     margin-top: 14px;
     margin-left: 100px;
     h3{
@@ -68,7 +68,7 @@ export const FoodsArea= styled.div`
     }
     `
 
-export const FoodsList = styled.div`
+export const FoodList = styled.div`
   display: flex;
   flex-direction: row;
   div:nth-child(1){

@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-
 export const Container = styled.div`
   width: 70vw;
   height: 85vh;
@@ -8,8 +7,7 @@ export const Container = styled.div`
   background: linear-gradient(170deg, #181818 10%, rgba(10,10,10,5) 100%);
   background:#101010;
 
-  overflow: auto;
-  
+  overflow-y: scroll;
   &::-webkit-scrollbar {
   width: 10px;
 

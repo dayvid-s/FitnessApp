@@ -60,8 +60,9 @@ export const CbumImage = styled(Image)`
 
 
 export const FoodsArea = styled.div`
-    margin-top: 14px;
-    margin-left: 100px;
+    margin-top: 14px; 
+    margin-left: auto;
+    margin: 14px 50px 0px auto;
     h3{
       color:#fff;
       font-size:1.5rem;

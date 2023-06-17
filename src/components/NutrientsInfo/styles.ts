@@ -80,6 +80,7 @@ export const IconWrapper = styled.div<IconWrapperProps>`
 export const TotalNutrientsArea = styled.div`
     margin-top: 0.5;
     p{
+        width: 200px;
         color:#e1e1e1e1;;
 
     }

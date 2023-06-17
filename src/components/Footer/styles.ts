@@ -33,7 +33,7 @@ export const ProjectInfoSection = styled.section`
 `
 
 export const ProductInfoSection = styled.section`
-    margin-left: 150px;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     line-height:40px;
@@ -52,10 +52,12 @@ export const ProductInfoSection = styled.section`
 
 export const SectionAbout = styled(ProductInfoSection)`
     margin-left: 100px;
-`
+    `
 
 export const DoubtSession = styled(ProductInfoSection)`
     margin-left: 100px;
+
+    margin-right:50px;  
 `
 
 export const BottomOfFooter = styled.div`

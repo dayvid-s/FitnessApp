@@ -1,6 +1,11 @@
 import {
   BottomOfFooter,
-  Container, ProductInfoSection, ProjectInfoSection, SectionAbout, WrapperOfFooterSessions,
+  Container,
+  ProductInfoSection,
+  ProjectInfoSection,
+  SectionAbout,
+  WrapperOfFooterSessions,
+  DoubtSession
 } from "./styles"
 import { AiOutlineTwitter } from "react-icons/ai"
 import { AiFillLinkedin } from "react-icons/ai"
@@ -50,12 +55,12 @@ export function Footer() {
         </SectionAbout>
 
 
-        <SectionAbout>
+        <DoubtSession>
           <strong>Dúvidas</strong>
           <p>Chat</p>
           <p>Contato</p>
           <p>Central de ajuda</p>
-        </SectionAbout>
+        </DoubtSession>
 
       </WrapperOfFooterSessions>
 

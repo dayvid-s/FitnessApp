@@ -159,6 +159,7 @@ export const UserObjectivesWrapper = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 50vh;
 `
 export const UserObjectivesRectangle = styled.div`
 

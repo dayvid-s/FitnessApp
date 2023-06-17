@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    height:16.5rem;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;

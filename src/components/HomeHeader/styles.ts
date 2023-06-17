@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const HeaderArea = styled.header`
-    max-width: 1520px;
     height: 4rem;
     margin: 0 auto;
     display: flex;
@@ -10,7 +9,6 @@ export const HeaderArea = styled.header`
     padding:2.5rem;
     border-bottom: 0.80px solid;
     border-color: #353535;
-    /* background-color: #12121; */
     img{
         margin-left: 0.5rem;
         cursor: pointer;

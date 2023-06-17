@@ -107,6 +107,8 @@ export const UserIndicatorContainer = styled.aside`
     flex-direction: column;
     margin-left: 20px;
     width: 30vw;
+    height: 50vh;
+
     align-items: center;
     border-radius: 20px;
     /* padding:20px; */
@@ -166,7 +168,7 @@ export const UserObjectivesRectangle = styled.div`
     justify-content: flex-start;
     padding:10px 20px;
     width: 50%;
-    height: 155px;
+    /* height: 155px; */
     border: 2px solid;
     border-color: gray ;
 

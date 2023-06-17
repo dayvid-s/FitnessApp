@@ -9,10 +9,10 @@ export interface IconWrapperProps {
 
 
 export const Container = styled.div<ConteinerProps>`    
+    margin-right:10px;
+
     height: 30vh;
-    width: 22vw;
-    margin-top: -8.0rem;
-    position:absolute;
+    width: 30vw;
     border-radius:5px;
     padding:1rem;
     

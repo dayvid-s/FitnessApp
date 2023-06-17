@@ -7,7 +7,7 @@ import {
 
 interface sectionTitleProps {
   title: string,
-  button: "RemakeGoals"| "Objective" ,
+  button?: "RemakeGoals"| "Objective" ,
 }
 
 export function SectionTitle( {title, button}: sectionTitleProps) {

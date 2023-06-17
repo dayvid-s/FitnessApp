@@ -17,13 +17,18 @@ export default function Home() {
       <UserNutrients />
       <SectionTitle title="Metas diárias / Semanais" button="RemakeGoals"  />
       <UserStatistics />
-      <HealthGoals />
       <SectionTitle 
         title="Atividades recomendadas para perda de peso" button='Objective' />
       {/* aqui será condicional/ para ganho de peso/manuntenção/ ou perda de peso */}
       {/* irei usar o $ para colocar variaveis nesse texto */}
+      {/* <HealthGoals /> */}
       <RecommendedActivities/>
       <TrainningAndFoods />
+      
+      <SectionTitle 
+        title="Tempo de sono semanal"  />
+      <HealthGoals />
+      
       <Footer />
     </Container>
 

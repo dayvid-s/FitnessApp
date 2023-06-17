@@ -11,8 +11,8 @@ export function HealthGoals() {
   return (
     <Container>
       <TitleArea>
-        <h2>Tempo de sono</h2>
-        <h2>6.4 <span>horas</span> </h2>
+        {/* <h2>De segunda a domingo</h2> */}
+        <h2>Média de 6.4 horas </h2>
         {/* <Image src={AngryEmogi} width={35} height={32} alt="Emoji feliz"/> */}
         
       </TitleArea>

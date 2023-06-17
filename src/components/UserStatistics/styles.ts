@@ -170,8 +170,8 @@ export const UserObjectivesRectangle = styled.div`
     padding:10px 20px;
     width: 50%;
     /* height: 155px; */
-    border: 2px solid;
-    border-color: gray ;
+    border: 2px rgb(60,60,60) solid;
+    /* border-color:  ; */
 
     /* background-color : rgb(40,40,40); */
     background: #1D1E24;

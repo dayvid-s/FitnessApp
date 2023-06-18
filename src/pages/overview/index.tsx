@@ -1,18 +1,18 @@
-import { HomeHeader } from "@component/components/HomeHeader"
+import { GlobalHeader } from "@component/components/GlobalHeader"
 import { UserNutrients } from "@component/components/UserNutrients"
 import { Welcome } from "@component/components/Welcome"
 import { Container } from "./styles"
 import { UserStatistics } from "@component/components/UserStatistics"
-import { Footer } from "./../../components/Footer"
-import { HealthGoals } from "./../../components/HealthGoals"
+import { Footer } from "../../components/Footer"
+import { HealthGoals } from "../../components/HealthGoals"
 import { SectionTitle } from "@component/components/SectionTitle"
 import { RecommendedActivities } from "@component/components/RecommendedActivities"
 import { TrainningAndFoods } from "@component/components/TrainningAndFoods"
 
-export default function Home() {
+export default function Overview() {
   return (
     <Container>
-      <HomeHeader />
+      <GlobalHeader />
       <Welcome />
       <UserNutrients />
       <SectionTitle title="Metas diárias / Semanais" button="RemakeGoals"  />

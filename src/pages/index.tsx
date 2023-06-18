@@ -1,6 +1,6 @@
 import { GlobalStyle } from "@component/styles/styles"
 import Head from "next/head"
-import Home from "./home"
+import Overview from "./overview"
 
 
 export default function Initial() {  
@@ -11,7 +11,7 @@ export default function Initial() {
         <title>Página inicial - FitnessApp</title>  
       </Head>      
       
-      <Home/>
+      <Overview/>
     </>
 
   )

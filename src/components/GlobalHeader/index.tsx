@@ -10,7 +10,7 @@ import {HiOutlineMail} from "react-icons/hi"
 import {HiOutlineAdjustments} from "react-icons/hi"
 import {AiOutlineUser} from "react-icons/ai"
 
-export function HomeHeader (){
+export function GlobalHeader (){
   return(
     <HeaderArea>
       <img src="https://www.svgrepo.com/show/331727/healthy.svg"

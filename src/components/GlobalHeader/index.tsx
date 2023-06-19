@@ -17,8 +17,13 @@ export function GlobalHeader (){
         width="40px" height="40px"/>
       <h3>FitnessApp</h3>
       <NavBar>
-        <a>Visão Geral</a>
-        <a>Dieta</a>   
+        <Link legacyBehavior  href="/">
+          <a>Home</a>
+        </Link>
+        <Link legacyBehavior  href="/overview">
+          <a>Visão Geral</a>
+        </Link>
+        <a>Treino</a>
         <Link legacyBehavior  href="/workouts">
           <a>Treino</a>
         </Link>

@@ -1,5 +1,4 @@
-// TODO: adicionar recolher e abrir conteudo do alimento encontrado.
-// .Adicionar cor responsiva ao nutrient em nutrient area
+//TODO: .Adicionar cor responsiva ao nutrient em nutrient area
 import {
   AddFoodArea,
   AreaOfAddingNutrientAmounts,

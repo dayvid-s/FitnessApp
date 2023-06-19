@@ -39,7 +39,7 @@ export function TrainningAndFoods() {
             <h1>Crepioca recheada de frango</h1>
             <div>
               <p>Lanche nutritivo e saudável para você substituir pães e massas!</p>
-              <Image src={Crepioca} width={150} height={150} alt={"Crepioca"} />
+              <Image src={Crepioca}  alt={"Crepioca"} />
             </div>
 
           </FoodsWrapper>
@@ -48,7 +48,7 @@ export function TrainningAndFoods() {
             <div>
               <p>Essa panqueca com whey protein vai deixar todo mundo querendo mais!
               </p>
-              <Image src={Pancake} width={150} height={150} alt={"Mingau de aveia"} />
+              <Image src={Pancake}  alt={"Mingau de aveia"} />
             </div>
 
           </FoodsWrapper>
@@ -58,7 +58,7 @@ export function TrainningAndFoods() {
             <h1>Mingau de aveia com morango </h1>
             <div>
               <p> Mingau super prático especialmente para quem esta sem apetite. </p>
-              <Image src={OatMealPorridge} width={190} height={150} alt={"Mingau de aveia"} />
+              <Image src={OatMealPorridge}  alt={"Mingau de aveia"} />
             </div>
 
           </FoodsWrapper>

@@ -114,5 +114,8 @@ export const FoodsWrapper = styled.div`
     /* font-family: 'Neue Haas Grotesk Text Pro', sans-serif; */
 
 
+  }img{
+    width: 150px;
+    height: auto;
   }
 `

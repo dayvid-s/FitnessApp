@@ -1,14 +1,15 @@
 import styled from "styled-components"
 
 export const HeaderArea = styled.header`
+    background-color: #02020f;
     height: 4rem;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding:2.5rem;
-    border-bottom: 0.80px solid;
-    border-color: #353535;
+    border-bottom: 1px solid;
+    border-color: #090f24;
     img{
         margin-left: 0.5rem;
         cursor: pointer;

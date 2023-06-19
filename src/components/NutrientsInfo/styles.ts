@@ -103,7 +103,14 @@ export const RegisterMealButton = styled.button<IconWrapperProps>`
     padding: 12px 10px 10px;
     border-radius:5px;
     border: none;
-    
+    &:hover {
+    background-color: #bdb8fa; 
+    svg{
+        color: #bdb8fa; 
+
+
+    }    
+    }
     svg{
 
         margin-left:5px;
@@ -112,6 +119,10 @@ export const RegisterMealButton = styled.button<IconWrapperProps>`
         height:25px;
         
         ${({ nutrientType }) => (nutrientType == "fiber") && css`
+        &:hover {
+            color: #bdb8fa; 
+            
+        }
         color: var(--green)`};
 
         ${({ nutrientType }) => (nutrientType == "carb") && css`

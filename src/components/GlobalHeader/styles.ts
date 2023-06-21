@@ -29,6 +29,11 @@ export const NavBar = styled.nav`
         font-size: 1rem;
         cursor:pointer;
 
+        &:hover {
+            color:#fefefe;
+        }
+
+
     }
 `
 export const IconsArea = styled.div`
@@ -39,6 +44,10 @@ export const IconsArea = styled.div`
         margin-right: 1.2rem;
         opacity: 0.7;
         cursor:pointer;
+        
+        &:hover {
+            opacity:1;
+        }
 
     }
 `
@@ -55,5 +64,10 @@ export const UserAccountArea = styled.div`
     }
     p{
         color:#aeaeb3;
+        cursor:pointer;
+        &:hover {
+            color:#fefefe;
+        }
+
     }
 `

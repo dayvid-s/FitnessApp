@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const Container = styled.footer`
+    background-color:#421166;
     margin-top: 300px;
-    height:30rem;
+    height:400px;
     padding:3rem 2.5rem 2rem;
 `
 
@@ -25,7 +26,8 @@ export const ProjectInfoSection = styled.section`
         font-weight: 1000px;
     }
     p{
-        color: #aeaeb3;
+        color:#fff;
+
         margin:30px 0px;
         width:25vw ;
         line-height:20px;
@@ -40,11 +42,12 @@ export const ProductInfoSection = styled.section`
 
     strong{ 
         color:#fff;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.10rem;
     }
     p{
-        color:#aeaeb3;
+        font-weight:400;
+        color:#e6e6e6;
         cursor: pointer;
     }
 `
@@ -63,16 +66,20 @@ export const DoubtSession = styled(ProductInfoSection)`
 export const BottomOfFooter = styled.div`
     /* background-color: #121214; */
     /* width:100vw; */
-    margin: 70px -40px 0 -40px;
-    border-top: 1px solid #373737;
+    margin-top: 20px ;
+    border-top: 2px solid #671ba0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding:35px 40px;
+    /* padding:35px 40px; */
     p{
         margin-right: auto;
+        color:#fff;
+
     }
     svg{
+        margin-top: 20px ;
+
         width:30px;
         height:30px;
         color:#fff;

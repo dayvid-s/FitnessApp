@@ -32,6 +32,19 @@ export function Footer() {
           <p>O FitnessApp tem o propósito de gerenciar nutrientes e treinos, e
             melhorar a qualidade de vida do usúario.
           </p>
+
+          <BottomOfFooter>
+
+
+            <AiOutlineTwitter></AiOutlineTwitter>
+            <AiFillLinkedin></AiFillLinkedin>
+            <BsFacebook></BsFacebook>
+            <AiOutlineInstagram></AiOutlineInstagram>
+            <BsTwitch></BsTwitch>
+            <BsDiscord></BsDiscord>
+
+          </BottomOfFooter>
+          <p>© FitnessApp 2023.<br/> Todos os direitos reservados.</p>
         </ProjectInfoSection>
 
 
@@ -63,19 +76,6 @@ export function Footer() {
         </DoubtSession>
 
       </WrapperOfFooterSessions>
-
-      <BottomOfFooter>
-        <p>© FitnessApp 2023. Todos os direitos reservados.</p>
-
-
-        <AiOutlineTwitter></AiOutlineTwitter>
-        <AiFillLinkedin></AiFillLinkedin>
-        <BsFacebook></BsFacebook>
-        <AiOutlineInstagram></AiOutlineInstagram>
-        <BsTwitch></BsTwitch>
-        <BsDiscord></BsDiscord>
-
-      </BottomOfFooter>
     </Container>
   )
 }

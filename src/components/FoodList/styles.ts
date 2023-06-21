@@ -4,9 +4,8 @@ export interface INutrientArea {
   type: string
 }
 export const Container = styled.div`
-  margin-bottom:30px;
   list-style: none;
-  margin-top:20px;
+  margin-top:10px;
   display:flex;
   background-color: #131313;
   padding:10px 15px;

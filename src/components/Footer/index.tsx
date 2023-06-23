@@ -13,6 +13,8 @@ import { BsFacebook } from "react-icons/bs"
 import { AiOutlineInstagram } from "react-icons/ai"
 import { BsTwitch } from "react-icons/bs"
 import { BsDiscord } from "react-icons/bs"
+import Logo from "../../assets/Logo.png"
+import Image from "next/image"
 
 export function Footer() {
 
@@ -24,8 +26,8 @@ export function Footer() {
 
         <ProjectInfoSection>
           <div>
-            <img src="https://www.svgrepo.com/show/331727/healthy.svg"
-              width="40px" height="40px" />
+            <Image src={Logo} alt={"Crepioca"}
+              width={50} height={50} />
             <h1>FitnessApp</h1>
           </div>
 

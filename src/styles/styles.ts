@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     /* background-color: rgba(0, 0, 0, 0.1); */
     /* background: #221133; */
     /* background: rgb(32, 33, 37); */
-    /* background-color: #121214; */
+    /* background-color: #010101; */
     background-color: #020210;
     ::-webkit-scrollbar {
     width: 5px;

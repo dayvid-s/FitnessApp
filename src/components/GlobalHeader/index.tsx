@@ -9,12 +9,13 @@ import {MdOutlineNotificationsActive} from "react-icons/md"
 import {HiOutlineMail} from "react-icons/hi"
 import {HiOutlineAdjustments} from "react-icons/hi"
 import {AiOutlineUser} from "react-icons/ai"
-
+import Image from "next/image"
+import Logo from "../../assets/Logo.png"
 export function GlobalHeader (){
   return(
     <HeaderArea>
-      <img src="https://www.svgrepo.com/show/331727/healthy.svg"
-        width="40px" height="40px"/>
+      <Image src={Logo} alt={"Logo"}
+        width={50} height={50} />
       <h3>FitnessApp</h3>
       <NavBar>
         <Link legacyBehavior  href="/">

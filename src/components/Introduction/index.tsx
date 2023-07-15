@@ -19,7 +19,7 @@ export function Introduction() {
     <Container data-aos="fade-up" >
       <IntroductionSection>
         <IntroductionTitle>
-          Uma nova forma de<br/> cuidar <h1>da sua sáude</h1>
+          Uma nova forma de<br/> cuidar <strong>da sua sáude</strong>
         </IntroductionTitle>
         <IntroductionParagraph>Tenha controle total da sua dieta, acompanhe seus objetivos de saúde, 
           e se inspire nos treinos apresentados!</IntroductionParagraph>

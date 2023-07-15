@@ -19,7 +19,7 @@ export const IntroductionTitle = styled.h1`
   font-size: 4rem;
   color: #fff;
   margin-top: 20px;
-  h1{
+  strong{
     font-size: 4rem;
     max-width: 800px;
     color: transparent;

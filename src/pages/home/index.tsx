@@ -1,17 +1,15 @@
-// TODO : DEIXAR CORES DO TEXTO GRANDE COLORIDAS
-
 import { GlobalHeader } from "@component/components/GlobalHeader"
 import {
   Container
 } from "./styles"
-// import FemaleGirl from "../../assets/black-flemale-removebg-preview.png"
 import { Introduction } from "@component/components/Introduction"
+import { MotivationToUse } from "@component/components/MotivationToUse"
 export default function Home() {
   return (
     <Container>
       <GlobalHeader />
       <Introduction/>
-
+      <MotivationToUse/>
       
 
       {/* Area que vai ter as 3 motivações do aplicativo( texto salvo no notepad) */}

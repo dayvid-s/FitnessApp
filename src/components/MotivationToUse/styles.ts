@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 50px 5vw ;
+  margin: 150px 5vw ;
   flex-wrap: wrap;
   gap:30px;
 `
@@ -12,7 +12,7 @@ export const Container = styled.section`
 export const MotivationArea = styled.div`
   background-color: #0e0e1d;
   padding: 20px;
-  width: 80vh;
+  width: 85vh;
   height: 300px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -37,8 +37,10 @@ export const DescriptionText = styled.p`
   margin-top: 30px;
 `
 export const StartToUseArea = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
   p{
-    margin-top: 30px;
     font-size: 1.5rem;
     color: #ffffffd6;
   }

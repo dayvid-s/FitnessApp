@@ -6,6 +6,8 @@ import {TbMeat} from "react-icons/tb"
 import {IoIosFitness} from "react-icons/io"
 import {FcTodoList} from "react-icons/fc"
 import {GiHealthNormal  } from "react-icons/gi"
+import {GiNotebook  } from "react-icons/gi"
+import {FiChevronRight} from "react-icons/fi"
 
   
 import React from "react"
@@ -23,7 +25,7 @@ export function MotivationToUse() {
   const ArrayOfMotivations : Motivation[] = [
     {
       id: 1,
-      icon:TbMeat,
+      icon:GiNotebook,
       MotivationTitle: "Conheça sua ingestão diária",
       MotivationDescription: "Conheça os nutrientes que você consome diariamente para tomar decisões informadas sobre sua dieta e saúde."
     },
@@ -61,9 +63,10 @@ export function MotivationToUse() {
             {React.createElement(Motivation.icon)}
             <MotivationTitleText>{Motivation.MotivationTitle}</MotivationTitleText>
             <DescriptionText>{Motivation.MotivationDescription}</DescriptionText>
+            
             <StartToUseArea>
-              {/* Icon here */}
-              <p>Começar a usar &lt; </p>
+              <p>Começar a usar</p>
+              <FiChevronRight/>
             </StartToUseArea>
           </MotivationArea>
             

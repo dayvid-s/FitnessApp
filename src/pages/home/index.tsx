@@ -4,6 +4,7 @@ import {
 } from "./styles"
 import { Introduction } from "@component/components/Introduction"
 import { MotivationToUse } from "@component/components/MotivationToUse"
+import { ImageWithExplanation } from "@component/components/ImageWithExplanation"
 export default function Home() {
   return (
     <Container>
@@ -22,12 +23,16 @@ export default function Home() {
     
       
       {/*Area com imagem e palavra no fundo   */}
+      <ImageWithExplanation/>
 
-
+      <MotivationToUse/>
 
       {/* Area de duvidas, use lib rsuite */}
-    
       
+      {/* terá componentes brancos/ divididos com esccuros.    */}
+
+
+
     </Container>
 
   )

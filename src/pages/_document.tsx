@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
           <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro" rel="stylesheet" />
           <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-text" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+          <link href="https://fonts.cdnfonts.com/css/graphik-trial" rel="stylesheet"/>
 
         </Head>
         <body>

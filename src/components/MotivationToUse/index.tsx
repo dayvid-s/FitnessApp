@@ -52,9 +52,8 @@ export function MotivationToUse() {
   ]
 
   return (
-    // <Container data-aos="fade-up" >
-    <Container >
-
+    <Container data-aos="fade-up" >
+      <h1>Transforme sua jornada fitness com nossa plataforma completa de nutrição e exercícios.</h1>
 
       {ArrayOfMotivations.map((Motivation) => {
         return (

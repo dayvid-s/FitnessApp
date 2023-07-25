@@ -5,6 +5,7 @@ import {
 import { Introduction } from "@component/components/Introduction"
 import { MotivationToUse } from "@component/components/MotivationToUse"
 import { ImageWithExplanation } from "@component/components/ImageWithExplanation"
+import { Footer } from "@component/components/Footer"
 export default function Home() {
   return (
     <Container>
@@ -32,7 +33,7 @@ export default function Home() {
       {/* terá componentes brancos/ divididos com esccuros.    */}
 
 
-
+      <Footer/>
     </Container>
 
   )

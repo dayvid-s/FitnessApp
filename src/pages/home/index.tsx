@@ -6,6 +6,7 @@ import { Introduction } from "@component/components/Introduction"
 import { MotivationToUse } from "@component/components/MotivationToUse"
 import { ImageWithExplanation } from "@component/components/ImageWithExplanation"
 import { Footer } from "@component/components/Footer"
+import { Doubts } from "@component/components/Doubts"
 export default function Home() {
   return (
     <Container>
@@ -14,7 +15,6 @@ export default function Home() {
       <MotivationToUse/>
       
 
-      {/* Area que vai ter as 3 motivações do aplicativo( texto salvo no notepad) */}
     
     
       
@@ -23,13 +23,11 @@ export default function Home() {
     
     
       
-      {/*Area com imagem e palavra no fundo   */}
       <ImageWithExplanation/>
 
-      <MotivationToUse/>
 
-      {/* Area de duvidas, use lib rsuite */}
-      
+      {/* Area de duvidas, use lib rsuite */} 
+      <Doubts/>
       {/* terá componentes brancos/ divididos com esccuros.    */}
 
 

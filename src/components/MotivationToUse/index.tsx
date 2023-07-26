@@ -63,10 +63,10 @@ export function MotivationToUse() {
             <MotivationTitleText>{Motivation.MotivationTitle}</MotivationTitleText>
             <DescriptionText>{Motivation.MotivationDescription}</DescriptionText>
             
-            <StartToUseArea>
+            {/* <StartToUseArea>
               <p>Começar a usar</p>
               <FiChevronRight/>
-            </StartToUseArea>
+            </StartToUseArea> */}
           </MotivationArea>
             
         )

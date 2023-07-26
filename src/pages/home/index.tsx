@@ -6,7 +6,7 @@ import { Introduction } from "@component/components/Introduction"
 import { MotivationToUse } from "@component/components/MotivationToUse"
 import { ImageWithExplanation } from "@component/components/ImageWithExplanation"
 import { Footer } from "@component/components/Footer"
-import { Doubts } from "@component/components/Doubts"
+import { ReadyToUse } from "@component/components/ReadyToUse"
 export default function Home() {
   return (
     <Container>
@@ -27,7 +27,7 @@ export default function Home() {
 
 
       {/* Area de duvidas, use lib rsuite */} 
-      <Doubts/>
+      <ReadyToUse/>
       {/* terá componentes brancos/ divididos com esccuros.    */}
 
 

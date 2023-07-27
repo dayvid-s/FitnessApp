@@ -7,6 +7,7 @@ import { MotivationToUse } from "@component/components/MotivationToUse"
 import { ImageWithExplanation } from "@component/components/ImageWithExplanation"
 import { Footer } from "@component/components/Footer"
 import { ReadyToUse } from "@component/components/ReadyToUse"
+import { Doubts } from "@component/components/Doubts"
 export default function Home() {
   return (
     <Container>
@@ -28,6 +29,7 @@ export default function Home() {
 
       {/* Area de duvidas, use lib rsuite */} 
       <ReadyToUse/>
+      <Doubts/>
       {/* terá componentes brancos/ divididos com esccuros.    */}
 
 

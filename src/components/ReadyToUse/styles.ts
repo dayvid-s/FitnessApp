@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const Container = styled.section`
   margin-top: 70px;
-  background-color: #C8D4FA;
   background-color: #0e0e1d;
   margin: 70px 20vh;
   border-top-right-radius: 50px;

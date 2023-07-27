@@ -16,35 +16,6 @@ export interface ImodalProps {
 
 export function ModalForRegisterFoods({ modalIsOpen, setIsOpen }: ImodalProps) {
 
-  const Panel = React.forwardRef<HTMLDivElement>((props, ref) => {
-
-    return (
-
-
-      <div
-        {...props}
-        ref={ref}
-        style={{
-          background: "#000",
-          width: 100,
-          height: 88,
-          display: "inline-block",
-          overflow: "hidden"
-        }}
-      >
-        <div>
-          <p>Panel</p>
-          <p>Content Content Content</p>
-        </div>
-      </div>
-    )
-  }
-  )
-
-  Panel.displayName = "Panel"
-
-
-
   const customStyles = {
     overlay: {
       top: 0,

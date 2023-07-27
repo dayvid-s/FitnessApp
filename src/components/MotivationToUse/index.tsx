@@ -30,21 +30,19 @@ export function MotivationToUse() {
       MotivationDescription: "Conheça os nutrientes que você consome diariamente para tomar decisões informadas sobre sua dieta e saúde."
     },
     {
-      id: 1,
+      id:2,
       icon: GiHealthNormal,
       MotivationTitle: "Gerenciamento de sua saúde:",
       MotivationDescription: " Registre suas refeições e monitore a ingestão de nutrientes essenciais para promover uma alimentação balanceada e saúde geral."
     },
     {
-      id: 1,
-    
+      id: 3,
       icon: FcTodoList,
       MotivationTitle: "Concretize suas metas fitness",
       MotivationDescription: " Crie planos alimentares personalizados e otimize a nutrição para progredir nos treinos,na perda de peso ou ganho de massa muscular."
     },
     {
-      id: 1,
-    
+      id: 4,
       icon: IoIosFitness,
       MotivationTitle: "Treine de acordo com você",
       MotivationDescription: " O Fitnessp App oferece treinos personalizados, permitindo que você se exercite de acordo com suas necessidades e objetivos, promovendo o progresso e a saúde física."

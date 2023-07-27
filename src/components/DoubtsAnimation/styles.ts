@@ -4,15 +4,21 @@ export interface INutrientArea {
   type: string
 }
 export const Container = styled.div`
+  width: 80vw;
   list-style: none;
   margin-top:10px;
   display:flex;
-  background-color: #131313;
-  padding:10px 15px;
+  background-color: #0e0e1d;
+  padding:20px 15px;
   display:flex;
   flex-direction: column;
-  /* height:370px; */
-
+  border-radius: 5px;
+  -webkit-touch-callout: none; /* Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 
   svg{
     color:#aeaeb3;
@@ -34,12 +40,6 @@ export const FoodNameAndActions = styled.div`
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-touch-callout: none; /* Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none;
 
 `
 
@@ -68,7 +68,8 @@ export const NutrientText = styled.p`
 `
 
 export const AreaOfAddingNutrientAmounts = styled.div`
-  height: 200px;
+  /* height: 200px; */
+  margin: 30px 0 10px ;
   display: flex;
   flex-direction: row;
   align-items: center;

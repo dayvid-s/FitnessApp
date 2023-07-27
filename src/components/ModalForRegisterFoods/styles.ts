@@ -33,6 +33,7 @@ export const ModalTopArea = styled.div`
   height:30px;
   opacity: 0.9;
   cursor:pointer;
+
 }
 svg:nth-of-type(2){
   margin-left: auto;

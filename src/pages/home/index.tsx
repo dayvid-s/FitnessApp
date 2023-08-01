@@ -14,25 +14,9 @@ export default function Home() {
       <GlobalHeader />
       <Introduction/>
       <MotivationToUse/>
-      
-
-    
-    
-      
-
-      {/* Area explicando o funcionamento dos treinos */}
-    
-    
-      
       <ImageWithExplanation/>
-
-
-      {/* Area de duvidas, use lib rsuite */} 
       <ReadyToUse/>
       <Doubts/>
-      {/* terá componentes brancos/ divididos com esccuros.    */}
-
-
       <Footer/>
     </Container>
 

@@ -8,7 +8,7 @@ import {FcTodoList} from "react-icons/fc"
 import {GiHealthNormal  } from "react-icons/gi"
 import {GiNotebook  } from "react-icons/gi"
 import {FiChevronRight} from "react-icons/fi"
-
+import { discoverAnimation } from "@component/utils/DiscoverAnimation"
   
 import React from "react"
 import { IconType } from "react-icons/lib"
@@ -49,13 +49,14 @@ export function MotivationToUse() {
     }
   ]
 
+
   return (
-    <Container data-aos="fade-up" >
+    <Container  >
       <h1>Transforme sua jornada fitness com nossa plataforma completa de nutrição e exercícios.</h1>
 
-      {ArrayOfMotivations.map((Motivation) => {
+      {ArrayOfMotivations.map((Motivation, index) => {
         return (
-          <MotivationArea key={Motivation.id}>
+          <MotivationArea data-aos={discoverAnimation(index)} key={Motivation.id}>
 
             {React.createElement(Motivation.icon)}
             <MotivationTitleText>{Motivation.MotivationTitle}</MotivationTitleText>

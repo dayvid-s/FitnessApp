@@ -1,7 +1,10 @@
+import { discoverAnimation } from "@component/utils/DiscoverAnimation"
 import { DoubtsAnimation } from "../DoubtsAnimation"
-import { RectangularButton } from "../RectangularButton"
 import {
-  Container, TextReadyToUse,
+  Container,
+  TextAboutDoubts,
+  SubtitleAboutDoubts,
+  DoubtsArea
 }
   from "./styles"
 
@@ -33,27 +36,24 @@ export function Doubts() {
       answer: "Nossa equipe de suporte ao cliente está disponível para ajudá-lo com qualquer dúvida ou problema que você possa ter. Você pode entrar em contato conosco por e-mail, chat ao vivo ou telefone durante o horário comercial para obter assistência rápida e eficiente. Além disso, oferecemos uma extensa base de conhecimento e tutoriais para ajudá-lo a aproveitar ao máximo o FitnessApp.",
     }
   ]
-
   return (
-    <Container>
-
-      {/* <Container data-aos="fade-up" > */}
-
-      <h2>Ajuda</h2>
-
-
-      <h1 style={ {marginTop:"50px"}}>Ficou alguma dúvida?</h1>
+    <Container  >
       
-      <h3 style={{ marginTop: "50px" }}>Se a sua dúvida não estiver nas perguntas frequentes, fale com a gente !</h3>
+      <h2  >Ajuda</h2>
+
+
+      <TextAboutDoubts>Ficou alguma dúvida?</TextAboutDoubts>
+      
+      <SubtitleAboutDoubts>Se a sua dúvida não estiver nas perguntas frequentes, fale com a gente !</SubtitleAboutDoubts>
     
-      <div style={{marginTop:"30px"}} >
+      <DoubtsArea>
         {
-          faq.map((question )=> {
+          faq.map((question,index )=> {
             return (
-              <DoubtsAnimation doubt={question}     key={question.id} />
+              <DoubtsAnimation animation={discoverAnimation(index)} doubt={question} key={question.id} />
             )
           })}
-      </div>
+      </DoubtsArea>
     </Container>
   )
 }

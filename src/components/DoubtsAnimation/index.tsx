@@ -22,9 +22,10 @@ type Doubt = {
 
 interface DoubtsAnimationProps {
   doubt: Doubt;
+  animation: string;
 }
 
-export function DoubtsAnimation({ doubt }: DoubtsAnimationProps) {
+export function DoubtsAnimation({ doubt, animation }: DoubtsAnimationProps) {
   const [showAnimation, setShowAnimation] = useState(false)
   const onChange = () => setShowAnimation(!showAnimation)
 
@@ -32,7 +33,7 @@ export function DoubtsAnimation({ doubt }: DoubtsAnimationProps) {
     return (
       <div {...props} ref={ref}>
         <AreaOfAnswers>
-          <h4 style={{ fontWeight: "400" }}>{doubt.answer} </h4>
+          <h4 >{doubt.answer} </h4>
         </AreaOfAnswers>
       </div>
     )
@@ -42,7 +43,7 @@ export function DoubtsAnimation({ doubt }: DoubtsAnimationProps) {
 
   return (
     <>
-      <Container>
+      <Container data-aos= {animation} >
         <DoubtsNameAndActions onClick={onChange}>
           <DoubtsListItem>{doubt.question}</DoubtsListItem>
           {showAnimation ? (

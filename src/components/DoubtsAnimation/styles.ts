@@ -75,6 +75,9 @@ export const AreaOfAnswers = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  h4{
+    font-weight: 400;
+  }
 `
 
 export const DoubtsListItem = styled.li`

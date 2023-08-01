@@ -5,7 +5,17 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
 `
 
-export const TextReadyToUse = styled.h1`
+export const TextAboutDoubts = styled.h1`
+margin-top: 30px;
+`
+
+export const SubtitleAboutDoubts = styled.h3`
+  margin-top: 30px;
+`
+export const DoubtsArea = styled.div`
+  margin-top: 30px;
 `

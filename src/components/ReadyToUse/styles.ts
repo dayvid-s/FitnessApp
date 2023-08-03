@@ -1,14 +1,15 @@
 import styled from "styled-components"
 
 export const Container = styled.section`
-  margin-top: 70px;
   background-color: #0e0e1d;
-  margin: 70px 20vh;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   border-bottom-right-radius:20px;
   border-bottom-left-radius: 20px;
   height: 370px;
+  max-width: 1120px;
+  margin: 80px auto;
+
 `
 
 export const AreaReadyToUse = styled.div`

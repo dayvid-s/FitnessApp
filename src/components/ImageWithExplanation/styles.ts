@@ -7,14 +7,18 @@ export const Container = styled.section`
 `
 
 export const WomanTrainningImg = styled(Image)`
-  max-height: 700px;
+  /* max-height: 900px; */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  max-height: 900px;
   opacity: 0.7;
   width: 100vw;
+  object-fit: cover;
 `
 
 export const AreaInsideImage = styled.div`
   position: absolute;
-  top: 300%;
+  top: 2000px;
   right: 10%;
   left: 2%;
   max-width: 650px;

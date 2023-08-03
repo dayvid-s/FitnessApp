@@ -6,6 +6,9 @@ export interface IDoubtArea {
 
 export const Container = styled.div`
   width: 80vw;
+  max-width: 1120px;
+  margin: 0px auto;
+
   list-style: none;
   margin-top: 10px;
   display: flex;

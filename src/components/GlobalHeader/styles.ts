@@ -1,15 +1,20 @@
 import styled from "styled-components"
 
-export const HeaderArea = styled.header`
+export const Container = styled.div`
     background-color: #02020f;
+    border-bottom: 1px solid;
+    border-color: #090f24;
+    display: flex ;
+    `
+export const HeaderArea = styled.header`
     height: 4rem;
-    margin: 0 auto;
+    margin: 0 auto; 
+    max-width: 1440px;
+    padding:2.5rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding:2.5rem;
-    border-bottom: 1px solid;
-    border-color: #090f24;
     img{
         margin-left: 0.5rem;
         cursor: pointer;

@@ -7,12 +7,15 @@ export const Container = styled.section`
   margin: 150px 5vw ;
   flex-wrap: wrap;
   gap:30px;
+  max-width: 1120px;
+  margin: 150px auto;
+
 `
 
 export const MotivationArea = styled.div`
   background-color: #0e0e1d;
   padding: 20px;
-  width: 85vh;
+  width: 500px;
   height: 300px;
   margin-bottom: 10px;
   border-radius: 10px;

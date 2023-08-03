@@ -5,8 +5,12 @@ import { BiChevronRight } from "react-icons/bi"
 export const Container = styled.main`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-left: 2.5rem;
   margin-top: 50px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 50px auto;
 `
 
 export const IntroductionSection = styled.section`
@@ -84,6 +88,6 @@ export const WomanImage = styled(Image)`
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
   max-width: 400px;
-  margin-left: 200px;
+  margin-left: 50px;
   background-image: linear-gradient(#82ffac , #020210);
 `

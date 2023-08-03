@@ -5,11 +5,15 @@ export const Container = styled.footer`
     margin-top: 300px;
     height:400px;
     padding:3rem 2.5rem 2rem;
+    
 `
 
 export const WrapperOfFooterSessions = styled.div`
     display: flex;
     flex-direction: row;
+    max-width: 1440px;
+    margin: 0px auto;
+
 `
 
 

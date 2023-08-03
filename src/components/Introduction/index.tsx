@@ -42,7 +42,7 @@ export function Introduction() {
 
 
 
-      <WomanImage src={FemaleGirl} alt="Mulher comendo" />
+      <WomanImage  src={FemaleGirl} alt="Mulher comendo" />
     
     
     </Container>

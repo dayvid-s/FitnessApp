@@ -21,7 +21,6 @@ export const AreaReadyToUse = styled.div`
 
 export const TextReadyToUse = styled.h1`
   margin-top: 70px;
-  font-size: 3rem;
   font-weight: 500;
   color: #fff;
   strong{
@@ -29,7 +28,6 @@ export const TextReadyToUse = styled.h1`
 `
 
 export const ParagraphCreateAccount = styled.p`
-  font-size: 1rem;
   font-weight: 400;
   color: #feefefca;
   margin-top: 30px;

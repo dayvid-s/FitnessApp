@@ -22,17 +22,25 @@ export const GlobalStyle = createGlobalStyle`
     padding:0;
     box-sizing: border-box;
   }
-
+/* 
 @media (max-width:1080px){
   html{
     font-size: 93.75%; // 15px
   }
 }
 
+
+
 @media (max-width:720px){
   html{
     font-size: 87.5%; // 14px
   }
+}
+ */
+
+html{
+  font-size: 62.5%;
+
 }
 
   body{
@@ -58,20 +66,31 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   p,a, h1, h2, h3, h4, h5, h6, li,strong {
-    color:#aeaeb3;
+    color:#aeaeb3; 
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Neue Haas Grotesk Text Pro', sans-serif; */
-
     /* font-family: 'Open Sans', sans-serif; */
 
 
   }
-
-  body, input, textarea, select, button{
-    font:500 1rem Montserrat, sans-serif;
-    
-
-
+  p,a,li,span{
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  input, textarea, select, button{
+    font:500 1.6rem "Roboto", sans-serif;
+  }
+  h1{
+    font-size: 4.2rem;
+  }
+  h2{
+    font-size: 3.5rem;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+  h4{
+    font-size: 2rem;
   }
 input{
   outline: 0;

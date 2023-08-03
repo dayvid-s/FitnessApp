@@ -44,7 +44,7 @@ export function Doubts() {
 
       <TextAboutDoubts>Ficou alguma dúvida?</TextAboutDoubts>
       
-      <SubtitleAboutDoubts>Se a sua dúvida não estiver nas perguntas frequentes, fale com a gente !</SubtitleAboutDoubts>
+      <SubtitleAboutDoubts>Se a sua dúvida não estiver nas perguntas frequentes, fale com a gente!</SubtitleAboutDoubts>
     
       <DoubtsArea>
         {

@@ -9,11 +9,11 @@ export const Container = styled.section`
 
 `
 
-export const TextAboutDoubts = styled.h1`
+export const TextAboutDoubts = styled.h3`
 margin-top: 30px;
 `
 
-export const SubtitleAboutDoubts = styled.h3`
+export const SubtitleAboutDoubts = styled.h4`
   margin-top: 30px;
 `
 export const DoubtsArea = styled.div`

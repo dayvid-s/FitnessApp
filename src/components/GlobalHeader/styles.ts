@@ -7,31 +7,31 @@ export const Container = styled.div`
     display: flex ;
     `
 export const HeaderArea = styled.header`
-    height: 4rem;
+    height: 68px;
     margin: 0 auto; 
     max-width: 1440px;
-    padding:2.5rem;
+    padding:44px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     img{
-        margin-left: 0.5rem;
+        margin-left: -5px;
         cursor: pointer;
     }
     h3{
-        font-size: 1.8rem;
+        font-size: 3.06rem;
         cursor:pointer;
         color:#fff;
     }
     `
 
 export const NavBar = styled.nav`
-    margin-left:5rem;
+    margin-left:85px;
     a{
         color:#aeaeb3;
-        margin-right: 2rem;
-        font-size: 1rem;
+        margin-right: 34px;
+        font-size: 1.6rem;
         cursor:pointer;
 
         &:hover {
@@ -64,12 +64,14 @@ export const UserAccountArea = styled.div`
     /* margin-right: 2.5rem; */
     margin-left: 10px;
     svg{
-        margin-right:1px;
+        margin-right:2px;
         cursor:pointer;
     }
     p{
+        /* font-size: 1.6rem; */
         color:#aeaeb3;
         cursor:pointer;
+        margin-right:-4px;
         &:hover {
             color:#fefefe;
         }

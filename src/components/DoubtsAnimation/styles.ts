@@ -78,13 +78,13 @@ export const AreaOfAnswers = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  h4{
+  p{
     font-weight: 400;
   }
 `
 
 export const DoubtsListItem = styled.li`
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 `
 
 export const AddDoubtArea = styled.div`
@@ -125,5 +125,5 @@ export const InputTitle = styled.p`
   margin-top: 10px;
   margin-left: 10px;
   color: #fff;
-  font-size: 0.80rem;
+  font-size: 1.2rem;
 `

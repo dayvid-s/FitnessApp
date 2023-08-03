@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const Container = styled.div`
   background-color: #CACBFD;
   border-radius: 20px;
-  height:15rem;
-  width:25rem;
-  margin-left:2.5rem;
-  margin-top: 3rem;
+  height:255px;
+  width:425px;
+  margin-left:34px;
+  margin-top: 41px;
   `
 
 export const TitleArea = styled.div`
@@ -16,14 +16,14 @@ export const TitleArea = styled.div`
      /*Represents the first two elements */
     font-family: Montserrat;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   h2:nth-child(2){
     margin-left: auto;
   }
   span{
     color: #000;
-    font-size: 1rem;
+    /* font-size: 2rem; */
   }
   svg{
 

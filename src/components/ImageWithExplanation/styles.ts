@@ -7,9 +7,6 @@ export const Container = styled.section`
 `
 
 export const WomanTrainningImg = styled(Image)`
-  /* max-height: 900px; */
-  /* width: 100vw; */
-  /* height: 100vh; */
   max-height: 900px;
   opacity: 0.7;
   width: 100vw;
@@ -26,8 +23,7 @@ export const AreaInsideImage = styled.div`
 `
 
 
-export const MotivationParagraph = styled.p`
-  font-size: 2.5rem;
+export const MotivationText = styled.h1`
   color: #feefef;
   font-weight: 500;
   font-family: Graphik Trial, sans-serif;
@@ -43,13 +39,11 @@ export const CallActionArea = styled.div`
   cursor: pointer;
   p{
   color: #3fe75b;
-  font-size: 1rem;
   font-weight: 500;
   }
 `
 
 export const InformationParagraph = styled.p`
-  font-size: 1rem;
   font-weight: 500;
   /* fontFamily: "Roboto", */
   color: #feefefca;

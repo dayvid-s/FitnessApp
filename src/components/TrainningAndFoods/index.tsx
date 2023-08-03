@@ -22,7 +22,7 @@ export function TrainningAndFoods() {
     <Container>
       <TrainningArea>
         <TrainningTitleWrapper>
-          <h3>Treinos para se inspirar</h3>
+          <h1>Treinos para se inspirar</h1>
         </TrainningTitleWrapper>
         <ImageArea>
           {/* https://www.youtube.com/watch?v=kFb2x_9GsVA */}
@@ -33,7 +33,7 @@ export function TrainningAndFoods() {
       </TrainningArea>
 
       <FoodsArea>
-        <h3>Alimentos recomendados </h3>
+        <h1>Alimentos recomendados </h1>
         <FoodList>
           <FoodsWrapper>
             <h1>Crepioca recheada de frango</h1>

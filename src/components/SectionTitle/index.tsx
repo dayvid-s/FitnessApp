@@ -15,7 +15,7 @@ export function SectionTitle( {title, button}: sectionTitleProps) {
   return (
     <Container>
       <div/>
-      <h3>{title}</h3>
+      <h4>{title}</h4>
 
       {button == "RemakeGoals" &&  
       <UserEditWrapper>

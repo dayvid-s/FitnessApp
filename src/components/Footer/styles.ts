@@ -4,7 +4,7 @@ export const Container = styled.footer`
     background-color:#00050d;
     margin-top: 300px;
     height:400px;
-    padding:3rem 2.5rem 2rem;
+    padding: 51px 43px 34px
     
 `
 
@@ -23,10 +23,9 @@ export const ProjectInfoSection = styled.section`
         flex-direction: row;
 
     }
-    h1{
+    h2{
         margin-left:10px;
         color:#00BCF2;
-        font-size:2rem;
         font-weight: 1000px;
     }
     p{
@@ -47,7 +46,7 @@ export const ProductInfoSection = styled.section`
     strong{ 
         color:#fff;
         font-weight: 700;
-        font-size: 1.10rem;
+        font-size: 1.8rem;
     }
     p{
         font-weight:400;

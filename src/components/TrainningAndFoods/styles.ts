@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   /* align-items: center; */
-  margin-left:2.5rem;
+  margin-left:34px;
   margin-top:50px;
 
   
@@ -15,9 +15,8 @@ export const Container = styled.div`
 
 
 export const TrainningArea = styled.div`
-  h3{
+  h1{
     color:#fff;
-    font-size:1.5rem;
     margin-left:20px;
   }
   
@@ -44,7 +43,6 @@ export const ImageArea = styled.div`
   justify-content: center;
   cursor: pointer;
   p{
-    font-size: 1rem;
     color:#000;
     font-weight:600;
     margin-right: auto;
@@ -63,9 +61,8 @@ export const FoodsArea = styled.div`
     margin-top: 14px; 
     margin-left: auto;
     margin: 14px 50px 0px auto;
-    h3{
+    h1{
       color:#fff;
-      font-size:1.5rem;
     }
     `
 
@@ -92,9 +89,6 @@ export const FoodsWrapper = styled.div`
   h1{
     margin-top: 10px;
     color: #000;
-     /* margin-left: 10px; */
-     font-size:1.2rem;
-     /* justify-self: center; */
      
     }
     div{

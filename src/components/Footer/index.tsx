@@ -28,7 +28,7 @@ export function Footer() {
           <div>
             <Image src={Logo} alt={"Crepioca"}
               width={50} height={50} />
-            <h1>FitnessApp</h1>
+            <h2>FitnessApp</h2>
           </div>
 
           <p>O FitnessApp tem o propósito de gerenciar nutrientes e treinos, e

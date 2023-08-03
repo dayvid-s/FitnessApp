@@ -1,5 +1,6 @@
 import {
-  Container, RecommendedActivityWrapper,
+  Container,
+  RecommendedActivityWrapper,
 } from "./styles"
 import {CgGym} from "react-icons/cg"
 import {BiRun} from "react-icons/bi"

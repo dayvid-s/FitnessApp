@@ -3,7 +3,7 @@ import {
   CallActionArea,
   Container,
   InformationParagraph,
-  MotivationParagraph,
+  MotivationText,
   WomanTrainningImg,
 }
   from "./styles"
@@ -21,7 +21,7 @@ export function ImageWithExplanation() {
       
       <AreaInsideImage>
 
-        <MotivationParagraph>Seja livre, seja ativo, seja saudável.</MotivationParagraph>
+        <MotivationText>Seja livre, seja ativo, seja saudável.</MotivationText>
 
         <CallActionArea>
           <p>Junte-se a nós</p>

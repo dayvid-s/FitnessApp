@@ -4,17 +4,17 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left:2.5rem;
+  margin-left:34px;
   margin-top:50px;
   div:nth-child(1){
     padding:30px 5px;
     background-color: #fff;
 
   }
-  h3{
+  h4{
     margin-left:20px;
     color:#fff;
-    font-size:1.5rem;
+    font-size:2.5rem;
   }
   `
 
@@ -32,7 +32,7 @@ export const UserEditWrapper = styled.button`
   border: none;
 
   margin-left: auto;
-  margin-right:2.5rem;
+  margin-right:34px;
   cursor: pointer;
   p{
       color:#fff;
@@ -64,7 +64,7 @@ export const RemakeGoalsButton = styled.button`
 export const UserObjectivesArea = styled.div`
 
   margin-left: auto;
-  margin-right:2.5rem;
+  margin-right:34px;
   background-color: #fff;
   padding: 10px 60px;
   border-radius: 20px;

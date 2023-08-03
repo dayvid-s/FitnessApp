@@ -33,7 +33,7 @@ export function DoubtsAnimation({ doubt, animation }: DoubtsAnimationProps) {
     return (
       <div {...props} ref={ref}>
         <AreaOfAnswers>
-          <h4 >{doubt.answer} </h4>
+          <p >{doubt.answer} </p>
         </AreaOfAnswers>
       </div>
     )

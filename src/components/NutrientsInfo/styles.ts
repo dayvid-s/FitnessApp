@@ -14,7 +14,7 @@ export const Container = styled.div<ConteinerProps>`
     height: 30vh;
     width: 30vw;
     border-radius:5px;
-    padding:1rem;
+    padding:16px;
     
     ${({ type }) => (type == "carb") && css`
     background-color: var(--blue-light)`};
@@ -43,7 +43,7 @@ export const MacroNutrientsWrapper = styled.div`
     p{
         color: #fff;
         margin-left: auto;
-        font-size: 1.20rem;
+        font-size: 1.8rem;
         font-weight:600;     
         font-family: "Montserrat", sans-serif;
 
@@ -85,7 +85,7 @@ export const TotalNutrientsArea = styled.div`
 
     }
     strong{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color:#ffffff;
     }
 `
@@ -93,7 +93,7 @@ export const TotalNutrientsArea = styled.div`
 export const RegisterMealButton = styled.button<IconWrapperProps>`
     display:flex;
     align-items: center;
-    margin-top:1rem;
+    margin-top:10px;
     margin-left: auto;
     background-color:#DBF2FD;
     font-family: roboto, sans-serif;

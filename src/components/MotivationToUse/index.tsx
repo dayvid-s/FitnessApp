@@ -1,13 +1,14 @@
 import {
-  Container, DescriptionText, MotivationArea, MotivationTitleText, StartToUseArea,
+  Container,
+  DescriptionText,
+  MotivationArea,
+  MotivationTitleText,
 }
   from "./styles"
-import {TbMeat} from "react-icons/tb"
 import {IoIosFitness} from "react-icons/io"
 import {FcTodoList} from "react-icons/fc"
 import {GiHealthNormal  } from "react-icons/gi"
 import {GiNotebook  } from "react-icons/gi"
-import {FiChevronRight} from "react-icons/fi"
 import { discoverAnimation } from "@component/utils/DiscoverAnimation"
   
 import React from "react"
@@ -52,7 +53,7 @@ export function MotivationToUse() {
 
   return (
     <Container  >
-      <h1>Transforme sua jornada fitness com nossa plataforma completa de nutrição e exercícios.</h1>
+      <h3>Transforme sua jornada fitness com nossa plataforma completa de nutrição e exercícios.</h3>
 
       {ArrayOfMotivations.map((Motivation, index) => {
         return (

@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
 export const Container = styled.main`
-    /* background-color: #f9f9f9; */
     display:flex;
     flex-direction: row;
-    margin-top: 3rem;
+    margin-top: 51px;
     flex:1;
-    margin-left: 2.5rem;
-    margin-right: 2rem;
+    margin-left: 34px;
+    margin-right: 34px;
     `
 export const Title = styled.h1`
 
@@ -22,7 +21,6 @@ export const ChartWithUserStats = styled.div`
     width: 55vw;
     align-items: center;
     justify-content: center;
-    /* box-shadow: 0 6px 7px -2px rgba(0, 0, 0, 0.2); */
     border-radius: 10px;
 
 
@@ -31,13 +29,12 @@ h1{
         color: #fff;
 
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 2.8rem;
         font-family: "Montserrat", sans-serif;
-        margin-top:2rem;
+        margin-top:34px;
     }
     div{
         flex:2;
-        /* background-color: blue; */
     }
     .apexcharts-legend-series {
         display:block;
@@ -64,8 +61,6 @@ export const UserWaterStatsWrapper = styled.div`
     margin-right: 20px;
     display:flex;
     box-shadow: 2px -2px 5px 2px rgba(171,171,171,0.49);
-
-    /* background: linear-gradient(264deg, #6E7BFB 0%,#8E7BFB 100%); */
     background: #1D1E24;
     height: 50vh;
     width: 20vw;
@@ -83,8 +78,7 @@ export const UserWaterStatsWrapper = styled.div`
         color: #FFF;
 
         font-weight: 700;
-        font-size: 2rem;
-        /* font-family: "Montserrat", sans-serif; */
+        font-size: 3rem;
         margin-top:10px;
         
     }
@@ -102,8 +96,6 @@ export const UserWaterStatsWrapper = styled.div`
 
 export const UserIndicatorContainer = styled.aside`
     display:flex;
-    /* background-color : #fff; */
-    /* height:100%; */
     flex-direction: column;
     margin-left: 20px;
     width: 30vw;
@@ -111,13 +103,11 @@ export const UserIndicatorContainer = styled.aside`
 
     align-items: center;
     border-radius: 20px;
-    /* padding:20px; */
     
     h1{
         color: #FFF;
         font-weight: 600px;
         margin-bottom: 10px;
-        /* margin: 0px 0px 10px 10px; */
     }
     p{
         font-weight: 600;
@@ -151,7 +141,6 @@ export const UserIndicatorContainer = styled.aside`
         `
 export const titleArea = styled.div`
     display:flex;
-    /* flex-direction:row;  */
     align-items: center;
     justify-content: center;
 `
@@ -169,21 +158,17 @@ export const UserObjectivesRectangle = styled.div`
     justify-content: flex-start;
     padding:10px 20px;
     width: 50%;
-    /* height: 155px; */
     border: 2px rgb(60,60,60) solid;
-    /* border-color:  ; */
 
-    /* background-color : rgb(40,40,40); */
     background: #1D1E24;
-    /* margin-right:5px; */
     strong{
         color:#9a76d9;
-        font-size:1.5rem;
+        font-size:2.5rem;
     }
     p{
         color:#fff;
         margin-bottom: 10px;
-        font-size: 0.80rem;
+        font-size: 1.3rem;
 }
 `
 

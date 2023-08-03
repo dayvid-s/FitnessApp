@@ -1,7 +1,6 @@
 import { GlobalHeader } from "@component/components/GlobalHeader"
 import { UserNutrients } from "@component/components/UserNutrients"
 import { Welcome } from "@component/components/Welcome"
-import { Container } from "./styles"
 import { UserStatistics } from "@component/components/UserStatistics"
 import { Footer } from "../../components/Footer"
 import { HealthGoals } from "../../components/HealthGoals"
@@ -11,7 +10,7 @@ import { TrainningAndFoods } from "@component/components/TrainningAndFoods"
 
 export default function Overview() {
   return (
-    <Container>
+    <>
       <GlobalHeader />
       <Welcome />
       <UserNutrients />
@@ -20,7 +19,6 @@ export default function Overview() {
       <SectionTitle 
         title="Atividades recomendadas para perda de peso" button='Objective' />
       {/* aqui será condicional/ para ganho de peso/manuntenção/ ou perda de peso */}
-      {/* irei usar o $ para colocar variaveis nesse texto */}
       {/* <HealthGoals /> */}
       <RecommendedActivities/>
       <TrainningAndFoods />
@@ -30,7 +28,7 @@ export default function Overview() {
       <HealthGoals />
       
       <Footer />
-    </Container>
+    </>
 
   )
 }

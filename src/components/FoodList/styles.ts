@@ -11,7 +11,6 @@ export const Container = styled.div`
   padding:10px 15px;
   display:flex;
   flex-direction: column;
-  /* height:370px; */
 
 
   svg{
@@ -75,7 +74,7 @@ export const AreaOfAddingNutrientAmounts = styled.div`
 `
 
 export const FoodListItem = styled.li`
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   `
 
@@ -83,7 +82,7 @@ export const FoodListItem = styled.li`
 export const InformationText = styled.p`
   font-family: "Montserrat";
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 1.4rem;
   width: 400px;
 `
 
@@ -102,9 +101,10 @@ export const AddFoodArea = styled.div`
   }
   }
   button{
-    padding: 12px 80px;
+    padding: 10px 70px;
     border: none;
     margin-top: 10px;
+    margin-bottom: 30px;
     background-color: #82ffac;
     border-radius: 10px;
   }
@@ -120,5 +120,5 @@ export const InputTitle = styled.p`
   margin-top: 10px;
   margin-left: 10px;
   color: #fff;
-  font-size: 0.80rem;
+  font-size: 1.5rem;
 `

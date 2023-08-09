@@ -63,8 +63,9 @@ export const CreateAccountButton = styled.button`
     font-family: Montserrat;
     color: #000;
     display: flex;
+    font-size: 1.7rem;
   }
-`
+  `
 
 export const ChevronRightIcon = styled(BiChevronRight)`
   width:30px; 
@@ -84,6 +85,7 @@ export const HowItWorksButton = styled.button`
     font-family: Montserrat;
     color: #fff;
     display: flex;
+    font-size: 1.7rem;
   }
 `
 

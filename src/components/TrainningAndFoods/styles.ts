@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 
 export const TrainningArea = styled.div`
-  h1{
+  h3{
     color:#fff;
     margin-left:20px;
   }
@@ -61,7 +61,7 @@ export const FoodsArea = styled.div`
     margin-top: 14px; 
     margin-left: auto;
     margin: 14px 50px 0px auto;
-    h1{
+    h3{
       color:#fff;
     }
     `
@@ -86,7 +86,7 @@ export const FoodsWrapper = styled.div`
   border-radius: 10px;
   
 
-  h1{
+  h3{
     margin-top: 10px;
     color: #000;
      

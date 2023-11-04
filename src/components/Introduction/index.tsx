@@ -16,7 +16,8 @@ import FemaleGirl from "../../assets/bela-jovem-comendo-salada-sobre-fundo-preto
 
 export function Introduction() {
   return (
-    <Container data-aos="fade-up" >
+    <Container  >
+      {/* <Container data-aos="fade-up" > */}
       <IntroductionSection>
         <IntroductionTitle>
           Uma nova forma de<br/> cuidar <strong>da sua sáude</strong>

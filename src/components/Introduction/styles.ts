@@ -11,12 +11,22 @@ export const Container = styled.main`
   width: 100%;
   max-width: 1120px; 
   margin: 50px auto; 
+      @media (max-width:768px){
+      flex-direction: column;
+      align-items: center;
+  }
+
 `
 
 export const IntroductionSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+    @media (max-width:768px){
+  order: 2;
+  }
+
+
 `
 
 export const IntroductionTitle = styled.h1`
@@ -95,4 +105,9 @@ export const WomanImage = styled(Image)`
   max-width: 400px; 
   margin-left: 50px; 
   background-image: linear-gradient(#82ffac, #020210);
+    @media (max-width:1200px){
+      display: none;
+  }
+
+
 `

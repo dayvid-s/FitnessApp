@@ -11,7 +11,7 @@ export default function Home() {
       <GlobalHeader />
       <Introduction/>
       <MotivationToUse/>
-      <ImageWithExplanation/>
+      {/* <ImageWithExplanation/> */}
       <ReadyToUse/>
       <Doubts/>
       <Footer/>
